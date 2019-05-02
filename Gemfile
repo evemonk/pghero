@@ -16,7 +16,10 @@ gem 'sass-rails', '~> 5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
+gem 'dotenv-rails'
 gem 'activerecord-nulldb-adapter'
+gem 'pghero'
+gem 'pg_query'
 
 group :development, :test do
 end
