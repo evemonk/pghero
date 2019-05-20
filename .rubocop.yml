@@ -1,0 +1,35 @@
+require: rubocop-performance
+
+inherit_from:
+  - .rubocop_local.yml
+  - .rubocop_todo.yml
+
+AllCops:
+  DisplayStyleGuide: true
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Gemspec/OrderedDependencies:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: true
+  EnforcedStyle: brackets
+
+Style/WordArray:
+  Enabled: true
+  EnforcedStyle: brackets
+
+Layout/SpaceInsideStringInterpolation:
+  EnforcedStyle: space
+  Enabled: true
+
+Metrics/LineLength:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/NegatedIf:
+  Enabled: false
