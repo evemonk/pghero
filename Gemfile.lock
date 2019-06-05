@@ -100,7 +100,7 @@ GEM
       ast (~> 2.4.0)
     pg (1.1.4)
     pg_query (1.1.0)
-    pghero (2.2.0)
+    pghero (2.2.1)
       activerecord
     puma (3.12.1)
     rack (2.0.7)
