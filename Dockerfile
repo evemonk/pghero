@@ -4,17 +4,11 @@ LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 
 RUN apt-get update -y && \
     apt-get dist-upgrade -y && \
-    apt-get install gnupg2 git gcc make wget curl wait-for-it -y
-
-RUN sh -c 'wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -'
-
-RUN sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
-
-RUN apt-get update -y && \
-    apt-get install postgresql-client-11 postgresql-11 libpq-dev postgresql-server-dev-10 -y
+    apt-get install gnupg2 git gcc g++ make wget curl wait-for-it libpq-dev libjemalloc2 --no-install-recommends -y
 
 RUN apt-get autoremove -y && \
-    apt-get clean -y
+    apt-get clean -y && \
+    rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /app
 
@@ -51,4 +45,3 @@ RUN bundle exec rake SECRET_KEY_BASE=blablabla DB_ADAPTER=nulldb assets:precompi
 EXPOSE 3000
 
 ENTRYPOINT ./bin/app.sh
-

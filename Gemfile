@@ -1,24 +1,21 @@
 # frozen_string_literal: true
 
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'rails', '~> 6.0.0.rc1'
-gem 'pg', '>= 0.18', '< 2.0'
-gem 'puma', '~> 3.11'
-gem 'sass-rails', '~> 5'
-gem 'bootsnap', '>= 1.4.2', require: false
-gem 'dotenv-rails'
-gem 'activerecord-nulldb-adapter'
-gem 'pghero'
-gem 'pg_query'
+gem "rails", "6.0.0"
+gem "pg", ">= 0.18", "< 2.0"
+gem "puma"
+gem "sass-rails"
+gem "bootsnap", ">= 1.4.2", require: false
+gem "activerecord-nulldb-adapter"
+gem "pghero"
+gem "pg_query"
 
 group :development, :test do
+  gem "dotenv-rails"
 end
 
 group :development do
-  gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'rubocop', require: false
-  gem 'rubocop-performance', require: false
-  gem 'rubocop-rspec', require: false
-  gem 'rubocop-rails', require: false
+  gem "listen", ">= 3.0.5", "< 3.2"
+  gem "standard", require: false
 end
