@@ -1,0 +1,31 @@
+---
+- - :whitelist
+  - MIT
+  - :who: biow0lf
+    :why: 
+    :versions: []
+    :when: 2019-09-01 18:32:03.147463000 Z
+- - :whitelist
+  - Apache 2.0
+  - :who: biow0lf
+    :why: 
+    :versions: []
+    :when: 2019-09-01 18:32:11.570137000 Z
+- - :whitelist
+  - New BSD
+  - :who: biow0lf
+    :why: 
+    :versions: []
+    :when: 2019-09-01 18:32:19.609002000 Z
+- - :whitelist
+  - ruby
+  - :who: biow0lf
+    :why: 
+    :versions: []
+    :when: 2019-09-01 18:32:30.912826000 Z
+- - :whitelist
+  - Simplified BSD
+  - :who: biow0lf
+    :why: 
+    :versions: []
+    :when: 2019-09-01 18:32:38.089723000 Z

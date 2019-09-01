@@ -16,5 +16,5 @@ end
 group :development do
   gem "listen", ">= 3.0.5", "< 3.2"
   gem "standard", require: false
-  gem "licensed", require: false
+  gem "license_finder", require: false
 end
