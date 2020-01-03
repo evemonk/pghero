@@ -103,7 +103,7 @@ GEM
     parser (2.7.0.1)
       ast (~> 2.4.0)
     parslet (1.8.2)
-    pg (1.2.0)
+    pg (1.2.1)
     pg_query (1.2.0)
     pghero (2.4.1)
       activerecord (>= 5)
