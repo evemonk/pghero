@@ -8,6 +8,7 @@ jobs:
         environment:
           RAILS_ENV: test
           PGHOST: localhost
+          SECRET_KEY_BASE: blablabla
       - image: postgres:12.2
         environment:
           POSTGRES_USER: circleci
