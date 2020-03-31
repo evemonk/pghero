@@ -48,4 +48,4 @@ RUN bundle exec rake SECRET_KEY_BASE=blablabla DB_ADAPTER=nulldb assets:precompi
 
 EXPOSE 3000/tcp
 
-ENTRYPOINT ./bin/app.sh
+ENTRYPOINT ["bin/app.sh"]
