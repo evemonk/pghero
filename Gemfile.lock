@@ -1,5 +1,7 @@
-GEM
-  remote: https://rubygems.org/
+GIT
+  remote: https://github.com/rails/rails.git
+  revision: 1db2ae1f5f7cf9615abc83620d282d535e4bc6aa
+  branch: 6-0-stable
   specs:
     actioncable (6.0.2.2)
       actionpack (= 6.0.2.2)
@@ -45,8 +47,6 @@ GEM
     activerecord (6.0.2.2)
       activemodel (= 6.0.2.2)
       activesupport (= 6.0.2.2)
-    activerecord-nulldb-adapter (0.4.0)
-      activerecord (>= 2.0.0)
     activestorage (6.0.2.2)
       actionpack (= 6.0.2.2)
       activejob (= 6.0.2.2)
@@ -57,7 +57,34 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-      zeitwerk (~> 2.2)
+      zeitwerk (~> 2.2, >= 2.2.2)
+    rails (6.0.2.2)
+      actioncable (= 6.0.2.2)
+      actionmailbox (= 6.0.2.2)
+      actionmailer (= 6.0.2.2)
+      actionpack (= 6.0.2.2)
+      actiontext (= 6.0.2.2)
+      actionview (= 6.0.2.2)
+      activejob (= 6.0.2.2)
+      activemodel (= 6.0.2.2)
+      activerecord (= 6.0.2.2)
+      activestorage (= 6.0.2.2)
+      activesupport (= 6.0.2.2)
+      bundler (>= 1.3.0)
+      railties (= 6.0.2.2)
+      sprockets-rails (>= 2.0.0)
+    railties (6.0.2.2)
+      actionpack (= 6.0.2.2)
+      activesupport (= 6.0.2.2)
+      method_source
+      rake (>= 0.8.7)
+      thor (>= 0.20.3, < 2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activerecord-nulldb-adapter (0.4.0)
+      activerecord (>= 2.0.0)
     ast (2.4.0)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
@@ -115,32 +142,11 @@ GEM
     rack (2.2.2)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    rails (6.0.2.2)
-      actioncable (= 6.0.2.2)
-      actionmailbox (= 6.0.2.2)
-      actionmailer (= 6.0.2.2)
-      actionpack (= 6.0.2.2)
-      actiontext (= 6.0.2.2)
-      actionview (= 6.0.2.2)
-      activejob (= 6.0.2.2)
-      activemodel (= 6.0.2.2)
-      activerecord (= 6.0.2.2)
-      activestorage (= 6.0.2.2)
-      activesupport (= 6.0.2.2)
-      bundler (>= 1.3.0)
-      railties (= 6.0.2.2)
-      sprockets-rails (>= 2.0.0)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.3.0)
       loofah (~> 2.3)
-    railties (6.0.2.2)
-      actionpack (= 6.0.2.2)
-      activesupport (= 6.0.2.2)
-      method_source
-      rake (>= 0.8.7)
-      thor (>= 0.20.3, < 2.0)
     rainbow (3.0.0)
     rake (13.0.1)
     rb-fsevent (0.10.3)
@@ -197,7 +203,7 @@ DEPENDENCIES
   pg_query
   pghero
   puma
-  rails (= 6.0.2.2)
+  rails!
   standard
 
 BUNDLED WITH
