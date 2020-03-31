@@ -1,31 +1,31 @@
 ---
-- - :whitelist
+- - :permit
   - MIT
   - :who: biow0lf
     :why: 
     :versions: []
-    :when: 2019-09-01 18:32:03.147463000 Z
-- - :whitelist
+    :when: 2020-03-31 00:09:21.223668000 Z
+- - :permit
   - Apache 2.0
   - :who: biow0lf
     :why: 
     :versions: []
-    :when: 2019-09-01 18:32:11.570137000 Z
-- - :whitelist
-  - New BSD
-  - :who: biow0lf
-    :why: 
-    :versions: []
-    :when: 2019-09-01 18:32:19.609002000 Z
-- - :whitelist
+    :when: 2020-03-31 00:09:50.169352000 Z
+- - :permit
   - ruby
   - :who: biow0lf
     :why: 
     :versions: []
-    :when: 2019-09-01 18:32:30.912826000 Z
-- - :whitelist
+    :when: 2020-03-31 00:09:53.863936000 Z
+- - :permit
   - Simplified BSD
   - :who: biow0lf
     :why: 
     :versions: []
-    :when: 2019-09-01 18:32:38.089723000 Z
+    :when: 2020-03-31 00:09:58.143907000 Z
+- - :permit
+  - New BSD
+  - :who: biow0lf
+    :why: 
+    :versions: []
+    :when: 2020-03-31 00:10:03.487099000 Z
