@@ -12,6 +12,9 @@ gem "pg_query"
 
 group :development, :test do
   gem "dotenv-rails"
+  gem "bundler-audit", require: false
+  gem "bundler-leak", require: false
+  gem "brakeman", require: false
 end
 
 group :development do
