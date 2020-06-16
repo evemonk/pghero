@@ -61,7 +61,14 @@ GEM
     ast (2.4.1)
     bootsnap (1.4.6)
       msgpack (~> 1.0)
+    brakeman (4.8.2)
     builder (3.2.4)
+    bundler-audit (0.7.0.1)
+      bundler (>= 1.2.0, < 3)
+      thor (>= 0.18, < 2)
+    bundler-leak (0.2.0)
+      bundler (>= 1.2.0, < 3)
+      thor (>= 0.18, < 2)
     concurrent-ruby (1.1.6)
     crass (1.0.6)
     dotenv (2.7.5)
@@ -189,6 +196,9 @@ PLATFORMS
 DEPENDENCIES
   activerecord-nulldb-adapter
   bootsnap (>= 1.4.2)
+  brakeman
+  bundler-audit
+  bundler-leak
   dotenv-rails
   license_finder
   listen (~> 3.2)
