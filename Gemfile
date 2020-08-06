@@ -7,7 +7,7 @@ gem "pg", ">= 0.18", "< 2.0"
 gem "puma"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "activerecord-nulldb-adapter"
-gem "pghero"
+gem "pghero", ">= 2.7.0"
 gem "pg_query"
 
 group :development, :test do
