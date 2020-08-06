@@ -4,3 +4,4 @@
 .env.example
 .circleci/*
 .deepsource.toml
+.generators

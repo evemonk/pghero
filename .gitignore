@@ -18,3 +18,4 @@
 
 .env
 .idea/*
+.generators
