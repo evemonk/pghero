@@ -9,7 +9,7 @@ jobs:
           RAILS_ENV: test
           PGHOST: localhost
           SECRET_KEY_BASE: blablabla
-      - image: postgres:12.3
+      - image: postgres:12.4
         environment:
           POSTGRES_USER: circleci
           POSTGRES_DB: evemonk_test
