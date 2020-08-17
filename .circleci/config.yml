@@ -9,7 +9,7 @@ jobs:
           RAILS_ENV: test
           PGHOST: localhost
           SECRET_KEY_BASE: blablabla
-      - image: postgres:12.3
+      - image: postgres:12.4
         environment:
           POSTGRES_USER: circleci
           POSTGRES_DB: evemonk_test
@@ -20,9 +20,11 @@ jobs:
           keys:
             - ruby-271-v1-dependencies-{{ checksum "Gemfile.lock" }}
             - ruby-271-v1-dependencies-
-      - run: sudo gem update --system '3.1.2'
+      - run: sudo gem update --system '3.1.4'
       - run: gem install bundler -v '2.1.4'
-      - run: bundle check || bundle install --clean --jobs=2 --retry=5 --path vendor/bundle
+      - run: bundle config set clean 'true'
+      - run: bundle config set path 'vendor/bundle'
+      - run: bundle check || bundle install --jobs=2 --retry=5
       - save_cache:
           paths:
             - ./vendor/bundle
@@ -41,7 +43,7 @@ jobs:
       - run: bundle exec bundle-leak
       - run: bundle exec standardrb
       - run: bundle exec rubocop
-      - run: bundle exec license_finder || true
+      - run: bundle exec license_finder
       - run: bundle exec rails zeitwerk:check
       - run: bundle exec rake SECRET_KEY_BASE=blablabla DB_ADAPTER=nulldb assets:precompile
       - run: ./hadolint --ignore DL3008 Dockerfile

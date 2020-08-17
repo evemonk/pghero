@@ -9,6 +9,7 @@ gem "bootsnap", ">= 1.4.2", require: false
 gem "activerecord-nulldb-adapter"
 gem "pghero"
 gem "pg_query"
+gem "easymon"
 
 group :development, :test do
   gem "dotenv-rails"
