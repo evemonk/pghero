@@ -16,6 +16,7 @@ group :development, :test do
   gem "bundler-audit", require: false
   gem "bundler-leak", require: false
   gem "brakeman", require: false
+  gem "fasterer", require: false
 end
 
 group :development do
