@@ -61,7 +61,7 @@ GEM
     ast (2.4.1)
     bootsnap (1.4.8)
       msgpack (~> 1.0)
-    brakeman (4.9.0)
+    brakeman (4.9.1)
     builder (3.2.4)
     bundler-audit (0.7.0.1)
       bundler (>= 1.2.0, < 3)
