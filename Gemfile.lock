@@ -120,7 +120,7 @@ GEM
     pg_query (1.2.0)
     pghero (2.7.2)
       activerecord (>= 5)
-    puma (4.3.6)
+    puma (5.0.0)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-test (1.1.0)
