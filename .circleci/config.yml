@@ -18,8 +18,8 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - ruby-271-v1-dependencies-{{ checksum "Gemfile.lock" }}
-            - ruby-271-v1-dependencies-
+            - ruby-272-v1-dependencies-{{ checksum "Gemfile.lock" }}
+            - ruby-272-v1-dependencies-
       - run: sudo gem update --system '3.1.4'
       - run: gem install bundler -v '2.1.4'
       - run: bundle config set clean 'true'
@@ -28,7 +28,7 @@ jobs:
       - save_cache:
           paths:
             - ./vendor/bundle
-          key: ruby-271-v1-dependencies-{{ checksum "Gemfile.lock" }}
+          key: ruby-272-v1-dependencies-{{ checksum "Gemfile.lock" }}
       - run: dockerize -wait tcp://localhost:5432 -timeout 1m
       - run: curl -L https://github.com/hadolint/hadolint/releases/download/v1.18.0/hadolint-Linux-x86_64 > ./hadolint
       - run: chmod +x ./hadolint
