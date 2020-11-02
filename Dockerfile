@@ -42,6 +42,8 @@ RUN bundle config set --global retry 5
 
 RUN bundle install
 
+RUN bundle exec bootsnap precompile --gemfile app/ lib/
+
 COPY . .
 
 RUN bundle exec rake SECRET_KEY_BASE=blablabla DB_ADAPTER=nulldb assets:precompile
