@@ -2,10 +2,10 @@
 
 source "https://rubygems.org"
 
-gem "rails", "~> 6.0.3"
-gem "pg", ">= 0.18", "< 2.0"
-gem "puma"
-gem "bootsnap", ">= 1.4.2", require: false
+gem "rails", "~> 6.1.0"
+gem "pg", "~> 1.1"
+gem "puma", "~> 5.0"
+gem "bootsnap", ">= 1.4.4", require: false
 gem "activerecord-nulldb-adapter"
 gem "pghero"
 gem "pg_query"
