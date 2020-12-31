@@ -94,7 +94,7 @@ GEM
       tomlrb (>= 1.3, < 2.1)
       with_env (= 1.1.0)
       xml-simple (~> 1.1.5)
-    listen (3.3.3)
+    listen (3.4.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.8.0)
@@ -214,7 +214,7 @@ DEPENDENCIES
   dotenv-rails
   easymon
   license_finder
-  listen (~> 3.3)
+  listen (~> 3.4)
   nokogiri (>= 1.11.0.rc4)
   pg (~> 1.1)
   pg_query
