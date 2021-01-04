@@ -13,8 +13,6 @@ gem "pghero"
 gem "pg_query"
 gem "easymon"
 
-gem "nokogiri", ">= 1.11.0.rc4"
-
 group :development, :test do
   gem "dotenv-rails"
   gem "bundler-audit", require: false
