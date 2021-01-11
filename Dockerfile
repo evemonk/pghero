@@ -22,11 +22,11 @@ COPY Gemfile.lock Gemfile.lock
 
 ENV RAILS_ENV production
 
-ENV RUBYGEMS_VERSION 3.2.3
+ENV RUBYGEMS_VERSION 3.2.5
 
 RUN gem update --system "$RUBYGEMS_VERSION"
 
-ENV BUNDLER_VERSION 2.2.3
+ENV BUNDLER_VERSION 2.2.5
 
 RUN gem install bundler --version "$BUNDLER_VERSION" --force
 
@@ -48,7 +48,7 @@ RUN bundle exec bootsnap precompile --gemfile app/ lib/
 
 COPY . .
 
-RUN bundle exec rake SECRET_KEY_BASE=blablabla DB_ADAPTER=nulldb assets:precompile
+RUN bundle exec rake SECRET_KEY_BASE=blablabla assets:precompile
 
 EXPOSE 3000/tcp
 
