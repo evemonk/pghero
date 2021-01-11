@@ -26,7 +26,7 @@ ENV RUBYGEMS_VERSION 3.2.5
 
 RUN gem update --system "$RUBYGEMS_VERSION"
 
-ENV BUNDLER_VERSION 2.2.3
+ENV BUNDLER_VERSION 2.2.5
 
 RUN gem install bundler --version "$BUNDLER_VERSION" --force
 
