@@ -48,7 +48,7 @@ RUN bundle exec bootsnap precompile --gemfile app/ lib/
 
 COPY . .
 
-RUN bundle exec rake SECRET_KEY_BASE=blablabla DB_ADAPTER=nulldb assets:precompile
+RUN bundle exec rake SECRET_KEY_BASE=blablabla assets:precompile
 
 EXPOSE 3000/tcp
 

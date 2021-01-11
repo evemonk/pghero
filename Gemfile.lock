@@ -47,8 +47,6 @@ GEM
     activerecord (6.1.1)
       activemodel (= 6.1.1)
       activesupport (= 6.1.1)
-    activerecord-nulldb-adapter (0.5.1)
-      activerecord (>= 5.2.0)
     activestorage (6.1.1)
       actionpack (= 6.1.1)
       activejob (= 6.1.1)
@@ -206,7 +204,6 @@ PLATFORMS
   x86_64-darwin-19
 
 DEPENDENCIES
-  activerecord-nulldb-adapter
   bootsnap (>= 1.4.4)
   brakeman
   bundler-audit
