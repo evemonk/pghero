@@ -6,7 +6,7 @@ ruby File.read(".ruby-version")
 
 gem "rails", "~> 6.1.1"
 gem "pg", "~> 1.1"
-gem "puma", "~> 5.0"
+gem "puma", "~> 5.2"
 gem "bootsnap", ">= 1.4.4", require: false
 gem "pghero"
 gem "pg_query"
