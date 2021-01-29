@@ -2,6 +2,7 @@ FROM ruby:3.0.0-slim
 
 LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 
+# skipcq: DOK-DL3008
 RUN set -eux; \
     apt-get update -y ; \
     apt-get dist-upgrade -y ; \
@@ -24,12 +25,13 @@ ENV RAILS_ENV production
 
 ENV RAILS_LOG_TO_STDOUT true
 
-ENV RUBYGEMS_VERSION 3.2.6
+ENV RUBYGEMS_VERSION 3.2.7
 
 RUN gem update --system "$RUBYGEMS_VERSION"
 
-ENV BUNDLER_VERSION 2.2.6
+ENV BUNDLER_VERSION 2.2.7
 
+# skipcq: DOK-DL3028
 RUN gem install bundler --version "$BUNDLER_VERSION" --force
 
 # throw errors if Gemfile has been modified since Gemfile.lock
