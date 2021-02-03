@@ -6,7 +6,7 @@ LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 RUN set -eux; \
     apt-get update -y ; \
     apt-get dist-upgrade -y ; \
-    apt-get install git gcc make libpq-dev --no-install-recommends -y ; \
+    apt-get install git gcc make libpq-dev libjemalloc2 --no-install-recommends -y ; \
     apt-get autoremove -y ; \
     apt-get clean -y ; \
     rm -rf /var/lib/apt/lists/*
@@ -25,11 +25,11 @@ ENV RAILS_ENV production
 
 ENV RAILS_LOG_TO_STDOUT true
 
-ENV RUBYGEMS_VERSION 3.2.7
+ENV RUBYGEMS_VERSION 3.2.8
 
 RUN gem update --system "$RUBYGEMS_VERSION"
 
-ENV BUNDLER_VERSION 2.2.7
+ENV BUNDLER_VERSION 2.2.8
 
 # skipcq: DOK-DL3028
 RUN gem install bundler --version "$BUNDLER_VERSION" --force
@@ -53,6 +53,10 @@ RUN bundle exec bootsnap precompile --gemfile app/ lib/
 COPY . .
 
 RUN bundle exec rake SECRET_KEY_BASE=blablabla assets:precompile
+
+ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
+
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 EXPOSE 3000/tcp
 
