@@ -56,6 +56,8 @@ RUN bundle exec rake SECRET_KEY_BASE=blablabla assets:precompile
 
 ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
 
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
 EXPOSE 3000/tcp
 
 ENTRYPOINT ["bin/app"]
