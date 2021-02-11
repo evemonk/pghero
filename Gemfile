@@ -15,7 +15,6 @@ gem "easymon"
 group :development, :test do
   gem "dotenv-rails"
   gem "bundler-audit", require: false
-  gem "bundler-leak", require: false
   gem "brakeman", require: false
   # gem "fasterer", require: false
 end
