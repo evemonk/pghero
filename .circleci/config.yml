@@ -9,7 +9,7 @@ jobs:
           RAILS_ENV: test
           PGHOST: localhost
           SECRET_KEY_BASE: blablabla
-      - image: postgres:13.1
+      - image: postgres:13.2
         environment:
           POSTGRES_USER: circleci
           POSTGRES_DB: evemonk_test
@@ -20,8 +20,8 @@ jobs:
           keys:
             - ruby-{{ checksum ".ruby-version" }}-v1-dependencies-{{ checksum "Gemfile.lock" }}
             - ruby-{{ checksum ".ruby-version" }}-v1-dependencies-
-      - run: sudo gem update --system '3.2.9'
-      - run: gem install bundler -v '2.2.9'
+      - run: sudo gem update --system '3.2.10'
+      - run: gem install bundler -v '2.2.10'
       - run: gem --version
       - run: bundle --version
       - run: bundle config set clean 'true'
