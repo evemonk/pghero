@@ -16,7 +16,7 @@ group :development, :test do
   gem "dotenv-rails"
   gem "bundler-audit", require: false
   gem "brakeman", require: false
-  # gem "fasterer", require: false
+  gem "fasterer", require: false
 end
 
 group :development do
