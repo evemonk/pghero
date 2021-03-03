@@ -188,7 +188,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    standard (0.13.0)
+    standard (1.0.0)
       rubocop (= 1.10.0)
       rubocop-performance (= 1.9.2)
     thor (1.0.1)
