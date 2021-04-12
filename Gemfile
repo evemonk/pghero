@@ -18,10 +18,9 @@ gem "bootsnap", ">= 1.4.4", require: false
 gem "pghero"
 gem "pg_query"
 gem "easymon"
-
-group :production do
-  gem "newrelic_rpm"
-end
+gem "sentry-ruby"
+gem "sentry-rails"
+gem "newrelic_rpm"
 
 group :development, :test do
   gem "dotenv-rails"
