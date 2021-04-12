@@ -19,6 +19,10 @@ gem "pghero"
 gem "pg_query"
 gem "easymon"
 
+group :production do
+  gem "newrelic_rpm"
+end
+
 group :development, :test do
   gem "dotenv-rails"
   gem "bundler-audit", require: false

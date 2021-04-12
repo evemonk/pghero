@@ -68,6 +68,7 @@ GEM
     mini_portile2 (2.5.0)
     minitest (5.14.4)
     msgpack (1.4.2)
+    newrelic_rpm (6.15.0)
     nio4r (2.5.7)
     nokogiri (1.11.3)
       mini_portile2 (~> 2.5.0)
@@ -163,6 +164,7 @@ DEPENDENCIES
   fasterer
   license_finder
   listen (~> 3.5)
+  newrelic_rpm
   pg (~> 1.1)
   pg_query
   pghero
