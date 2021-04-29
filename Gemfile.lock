@@ -95,6 +95,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
+    rack-floc-off (0.0.2)
+      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails-dom-testing (2.0.3)
@@ -188,6 +190,7 @@ DEPENDENCIES
   pg_query
   pghero
   puma (~> 5.2)
+  rack-floc-off
   railties (~> 6.1.3)
   sentry-rails
   sentry-ruby
