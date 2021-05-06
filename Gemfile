@@ -4,6 +4,7 @@ source "https://rubygems.org"
 
 ruby File.read(".ruby-version")
 
+# skipcq: RB-DS1008
 gem "railties", "6.1.3.2"
 gem "actionpack", "6.1.3.2"
 gem "actionview", "6.1.3.2"
