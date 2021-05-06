@@ -176,7 +176,7 @@ DEPENDENCIES
   actionview (= 6.1.3.2)
   activemodel (~> 6.1.3)
   activerecord (~> 6.1.3)
-  activesupport (~> 6.1.3)
+  activesupport (= 6.1.3.2)
   bootsnap (>= 1.4.4)
   brakeman
   bundler-audit
