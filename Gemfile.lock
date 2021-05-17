@@ -147,7 +147,7 @@ GEM
     sentry-ruby-core (4.4.2)
       concurrent-ruby
       faraday
-    sexp_processor (4.15.2)
+    sexp_processor (4.15.3)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
