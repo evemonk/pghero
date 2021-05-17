@@ -34,8 +34,6 @@ jobs:
             - ./vendor/bundle
           key: ruby-{{ checksum ".ruby-version" }}-v1-dependencies-{{ checksum "Gemfile.lock" }}
       - run: dockerize -wait tcp://localhost:5432 -timeout 1m
-      - run: curl -L https://github.com/hadolint/hadolint/releases/download/v2.3.0/hadolint-Linux-x86_64 > ./hadolint
-      - run: chmod +x ./hadolint
       - run: wget -qO- https://github.com/koalaman/shellcheck/releases/download/stable/shellcheck-stable.linux.x86_64.tar.xz | tar -xJv
       - run: shellcheck-stable/shellcheck --version
       - run: bundle exec rails db:create
@@ -49,5 +47,4 @@ jobs:
       - run: bundle exec license_finder || true
       - run: bundle exec rails zeitwerk:check
       - run: bundle exec rake SECRET_KEY_BASE=blablabla assets:precompile
-      - run: ./hadolint --ignore DL3005 --ignore DL3008 --ignore DL3059 Dockerfile
       - run: shellcheck-stable/shellcheck bin/app
