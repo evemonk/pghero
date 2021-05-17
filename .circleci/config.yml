@@ -41,7 +41,6 @@ jobs:
       - run: bundle exec bundle-audit update
       - run: bundle exec bundle-audit
       - run: bundle exec standardrb
-      - run: bundle exec rubocop
       - run: bundle exec license_finder || true
       - run: bundle exec rails zeitwerk:check
       - run: bundle exec rake SECRET_KEY_BASE=blablabla assets:precompile
