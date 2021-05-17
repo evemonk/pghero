@@ -38,8 +38,6 @@ jobs:
       - run: shellcheck-stable/shellcheck --version
       - run: bundle exec rails db:create
       - run: bundle exec rails db:migrate
-      - run: bundle exec bundle-audit update
-      - run: bundle exec bundle-audit
       - run: bundle exec standardrb
       - run: bundle exec license_finder || true
       - run: bundle exec rails zeitwerk:check
