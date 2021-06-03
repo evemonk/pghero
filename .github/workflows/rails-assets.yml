@@ -1,0 +1,22 @@
+name: Rails assets
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  precompile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: rails assets:precompile
+        run: bundle exec rails SECRET_KEY_BASE=blablabla assets:precompile
