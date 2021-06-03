@@ -3,6 +3,5 @@
 .idea/*
 .env
 .env.example
-.circleci/*
 .deepsource.toml
 .generators
