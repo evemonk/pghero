@@ -36,5 +36,4 @@ jobs:
       - run: dockerize -wait tcp://localhost:5432 -timeout 1m
       - run: bundle exec rails db:create
       - run: bundle exec rails db:migrate
-      - run: bundle exec license_finder || true
       - run: bundle exec rails zeitwerk:check
