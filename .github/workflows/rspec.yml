@@ -1,0 +1,49 @@
+name: RSpec
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+env:
+  POSTGRES_HOST_AUTH_METHOD: "trust"
+  POSTGRES_USER: "runner"
+  POSTGRES_DB: "evemonk_test"
+  PGHOST: "localhost"
+  SECRET_KEY_BASE: "919650e468e29e897a53ef239b6e0228f8b71ec6ed353b691d140945e98d0c6a63731811afc27b61b9094523740962499afabc6d7ad0c872f1d5b62472083a08"
+
+jobs:
+  rspec:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: "postgres:13.3"
+        env:
+          POSTGRES_HOST_AUTH_METHOD: "trust"
+          POSTGRES_USER: "runner"
+          POSTGRES_DB: "evemonk_test"
+        ports:
+          - "5432:5432"
+        # needed because the postgres container does not provide a healthcheck
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: bootsnap precompile
+        run: bundle exec bootsnap precompile --gemfile app/ lib/
+      - name: rails zeitwerk:check
+        run: bundle exec rails zeitwerk:check
+      - name: rails db:create
+        run: bundle exec rails db:create
+      - name: rails db:migrate
+        run: bundle exec rails db:migrate
+      - name: Run tests
+        run: bundle exec rspec --force-color --profile --format documentation
