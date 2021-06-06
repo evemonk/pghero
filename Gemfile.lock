@@ -34,7 +34,7 @@ GEM
       bundler (>= 1.2.0, < 3)
       thor (~> 1.0)
     colorize (0.8.1)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.9)
     crass (1.0.6)
     diff-lcs (1.4.4)
     dotenv (2.7.6)
