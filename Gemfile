@@ -32,7 +32,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "listen", "~> 3.5"
+  gem "listen", "~> 3.6"
   gem "standard", require: false
   gem "license_finder", require: false
 end
