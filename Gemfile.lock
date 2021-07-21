@@ -76,7 +76,7 @@ GEM
       tomlrb (>= 1.3, < 2.1)
       with_env (= 1.1.0)
       xml-simple (~> 1.1.5)
-    listen (3.5.1)
+    listen (3.6.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.10.0)
@@ -210,7 +210,7 @@ DEPENDENCIES
   easymon
   fasterer
   license_finder
-  listen (~> 3.5)
+  listen (~> 3.6)
   newrelic_rpm
   pg (~> 1.1)
   pg_query
