@@ -48,6 +48,8 @@ RUN bundle config set --global without development test
 # retry 5 times before fail
 RUN bundle config set --global retry 5
 
+RUN bundle install
+
 RUN rm -rf /usr/local/bundle/cache/*.gem
 
 RUN find /usr/local/bundle/gems/ -name "*.c" -delete
