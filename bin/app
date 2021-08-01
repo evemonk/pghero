@@ -1,9 +1,0 @@
-#! /bin/bash
-
-set -eux
-
-rm -rf /shared/*
-
-cp -R /app/public/ /shared/
-
-bundle exec puma -C config/puma.rb
