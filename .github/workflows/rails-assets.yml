@@ -19,4 +19,4 @@ jobs:
         with:
           bundler-cache: true
       - name: rails assets:precompile
-        run: bundle exec rails SECRET_KEY_BASE=blablabla assets:precompile
+        run: bundle exec rails SECRET_KEY_BASE=no assets:precompile
