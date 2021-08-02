@@ -1,0 +1,5 @@
+#! /bin/bash
+
+set -eux
+
+bundle exec puma -C config/puma.rb
