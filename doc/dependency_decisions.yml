@@ -1,61 +1,61 @@
 ---
 - - :permit
   - MIT
-  - :who: biow0lf
+  - :who: "@biow0lf"
     :why:
     :versions: []
     :when: 2020-03-31 00:09:21.223668000 Z
 - - :permit
   - Apache 2.0
-  - :who: biow0lf
+  - :who: "@biow0lf"
     :why:
     :versions: []
     :when: 2020-03-31 00:09:50.169352000 Z
 - - :permit
   - ruby
-  - :who: biow0lf
+  - :who: "@biow0lf"
     :why:
     :versions: []
     :when: 2020-03-31 00:09:53.863936000 Z
 - - :permit
   - Simplified BSD
-  - :who: biow0lf
+  - :who: "@biow0lf"
     :why:
     :versions: []
     :when: 2020-03-31 00:09:58.143907000 Z
 - - :permit
   - New BSD
-  - :who: biow0lf
+  - :who: "@biow0lf"
     :why:
     :versions: []
     :when: 2020-03-31 00:10:03.487099000 Z
 - - :approve
   - brakeman
-  - :who: biow0lf
+  - :who: "@biow0lf"
     :why: dev dependency
     :versions: []
     :when: 2020-07-15 00:29:47.220490000 Z
 - - :approve
   - bundler-audit
-  - :who: biow0lf
+  - :who: "@biow0lf"
     :why: dev dependency
     :versions: []
     :when: 2020-07-15 00:29:52.052665000 Z
 - - :approve
   - colorize
-  - :who: biow0lf
+  - :who: "@biow0lf"
     :why: dev dependency
     :versions: []
     :when: 2021-06-03 13:01:55.423186000 Z
 - - :ignore_group
   - development
-  - :who: biow0lf
+  - :who: "@biow0lf"
     :why:
     :versions: []
     :when: 2021-08-23 22:38:32.031530000 Z
 - - :ignore_group
   - test
-  - :who: biow0lf
+  - :who: "@biow0lf"
     :why:
     :versions: []
     :when: 2021-08-23 22:38:36.894888000 Z
