@@ -66,7 +66,7 @@ GEM
     fasterer (0.9.0)
       colorize (~> 0.7)
       ruby_parser (>= 3.14.1)
-    ffi (1.15.3)
+    ffi (1.15.4)
     google-protobuf (3.17.3-universal-darwin)
     google-protobuf (3.17.3-x86_64-linux)
     i18n (1.8.10)
