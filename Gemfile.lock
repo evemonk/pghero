@@ -222,6 +222,8 @@ DEPENDENCIES
   rack-floc-off
   railties (= 6.1.4.1)
   rspec-rails
+  rubocop
+  rubocop-performance
   sentry-rails
   sentry-ruby
   sprockets-rails
