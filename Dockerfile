@@ -100,6 +100,8 @@ ENV RAILS_LOG_TO_STDOUT true
 
 ENV RAILS_SERVE_STATIC_FILES true
 
+ENV NEW_RELIC_AGENT_ENABLED false
+
 ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
