@@ -1,4 +1,4 @@
-FROM ruby:3.0.2-slim AS builder
+FROM ruby:3.0.3-slim AS builder
 
 # skipcq: DOK-DL3008
 RUN set -eux; \
@@ -65,7 +65,7 @@ RUN bundle exec bootsnap precompile --gemfile app/ lib/
 
 RUN bundle exec rake SECRET_KEY_BASE=no assets:precompile
 
-FROM ruby:3.0.2-slim
+FROM ruby:3.0.3-slim
 
 LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 
