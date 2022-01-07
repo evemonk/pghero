@@ -4,12 +4,12 @@ source "https://rubygems.org"
 
 ruby File.read(".ruby-version")
 
-gem "railties", "6.1.4.3"
-gem "actionpack", "6.1.4.3"
-gem "actionview", "6.1.4.3"
-gem "activemodel", "6.1.4.3"
-gem "activerecord", "6.1.4.3"
-gem "activesupport", "6.1.4.3"
+gem "railties", "7.0.1"
+gem "actionpack", "7.0.1"
+gem "actionview", "7.0.1"
+gem "activemodel", "7.0.1"
+gem "activerecord", "7.0.1"
+gem "activesupport", "7.0.1"
 gem "sprockets-rails"
 
 gem "pg", "~> 1.1"
