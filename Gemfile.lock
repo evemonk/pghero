@@ -69,7 +69,7 @@ GEM
     ffi (1.15.5)
     google-protobuf (3.19.3-x86_64-darwin)
     google-protobuf (3.19.3-x86_64-linux)
-    i18n (1.8.11)
+    i18n (1.9.0)
       concurrent-ruby (~> 1.0)
     license_finder (6.15.0)
       bundler
