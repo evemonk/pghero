@@ -18,7 +18,6 @@ gem "bootsnap", ">= 1.4.4", require: false
 gem "rack-floc-off"
 gem "pghero"
 gem "pg_query"
-gem "easymon"
 gem "sentry-ruby"
 gem "sentry-rails"
 gem "newrelic_rpm"
