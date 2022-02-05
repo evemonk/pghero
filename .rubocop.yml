@@ -2,9 +2,7 @@ AllCops:
   NewCops: enable
   Exclude:
     - "bin/*"
-    - "config/spring.rb"
     - "db/schema.rb"
-    - "node_modules/**/*"
     - "vendor/**/*"
 
 Style/StringLiterals:
@@ -80,4 +78,7 @@ Layout/ElseAlignment:
   Enabled: false
 
 Layout/EndAlignment:
+  Enabled: false
+
+Lint/EmptyBlock:
   Enabled: false

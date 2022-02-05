@@ -1,30 +1,29 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    actionpack (6.1.4.3)
-      actionview (= 6.1.4.3)
-      activesupport (= 6.1.4.3)
-      rack (~> 2.0, >= 2.0.9)
+    actionpack (7.0.1)
+      actionview (= 7.0.1)
+      activesupport (= 7.0.1)
+      rack (~> 2.0, >= 2.2.0)
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.2.0)
-    actionview (6.1.4.3)
-      activesupport (= 6.1.4.3)
+    actionview (7.0.1)
+      activesupport (= 7.0.1)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    activemodel (6.1.4.3)
-      activesupport (= 6.1.4.3)
-    activerecord (6.1.4.3)
-      activemodel (= 6.1.4.3)
-      activesupport (= 6.1.4.3)
-    activesupport (6.1.4.3)
+    activemodel (7.0.1)
+      activesupport (= 7.0.1)
+    activerecord (7.0.1)
+      activemodel (= 7.0.1)
+      activesupport (= 7.0.1)
+    activesupport (7.0.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
-      zeitwerk (~> 2.3)
     ast (2.4.2)
     bootsnap (1.10.3)
       msgpack (~> 1.2)
@@ -45,7 +44,6 @@ GEM
     fasterer (0.9.0)
       colorize (~> 0.7)
       ruby_parser (>= 3.14.1)
-    ffi (1.15.5)
     google-protobuf (3.19.4-x86_64-darwin)
     google-protobuf (3.19.4-x86_64-linux)
     i18n (1.9.1)
@@ -57,9 +55,6 @@ GEM
       tomlrb (>= 1.3, < 2.1)
       with_env (= 1.1.0)
       xml-simple (~> 1.1.5)
-    listen (3.7.1)
-      rb-fsevent (~> 0.10, >= 0.10.3)
-      rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.13.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -93,17 +88,15 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
-    railties (6.1.4.3)
-      actionpack (= 6.1.4.3)
-      activesupport (= 6.1.4.3)
+    railties (7.0.1)
+      actionpack (= 7.0.1)
+      activesupport (= 7.0.1)
       method_source
-      rake (>= 0.13)
+      rake (>= 12.2)
       thor (~> 1.0)
+      zeitwerk (~> 2.5)
     rainbow (3.1.1)
     rake (13.0.6)
-    rb-fsevent (0.11.0)
-    rb-inotify (0.10.1)
-      ffi (~> 1.0)
     regexp_parser (2.2.0)
     rexml (3.2.5)
     rspec-core (3.10.2)
@@ -176,25 +169,24 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  actionpack (= 6.1.4.3)
-  actionview (= 6.1.4.3)
-  activemodel (= 6.1.4.3)
-  activerecord (= 6.1.4.3)
-  activesupport (= 6.1.4.3)
-  bootsnap (>= 1.4.4)
+  actionpack (= 7.0.1)
+  actionview (= 7.0.1)
+  activemodel (= 7.0.1)
+  activerecord (= 7.0.1)
+  activesupport (= 7.0.1)
+  bootsnap
   brakeman
   bundler-audit
   dotenv-rails
   fasterer
   license_finder
-  listen (~> 3.7)
   newrelic_rpm
   pg (~> 1.3)
   pg_query
   pghero
   puma (~> 5.6)
   rack-floc-off
-  railties (= 6.1.4.3)
+  railties (= 7.0.1)
   rspec-rails
   rubocop
   rubocop-performance
@@ -202,6 +194,7 @@ DEPENDENCIES
   sentry-ruby
   sprockets-rails
   standard
+  tzinfo-data
 
 RUBY VERSION
    ruby 3.0.3p157

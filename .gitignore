@@ -18,10 +18,9 @@
 !/tmp/pids/
 !/tmp/pids/.keep
 
-
 /public/assets
-.byebug_history
 
 .env
 .idea/*
 .generators
+spec/examples.txt

@@ -4,17 +4,20 @@ source "https://rubygems.org"
 
 ruby File.read(".ruby-version")
 
-gem "railties", "6.1.4.3"
-gem "actionpack", "6.1.4.3"
-gem "actionview", "6.1.4.3"
-gem "activemodel", "6.1.4.3"
-gem "activerecord", "6.1.4.3"
-gem "activesupport", "6.1.4.3"
+gem "railties", "7.0.1"
+gem "actionpack", "7.0.1"
+gem "actionview", "7.0.1"
+gem "activemodel", "7.0.1"
+gem "activerecord", "7.0.1"
+gem "activesupport", "7.0.1"
 gem "sprockets-rails"
-
 gem "pg", "~> 1.3"
 gem "puma", "~> 5.6"
-gem "bootsnap", ">= 1.4.4", require: false
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "bootsnap", require: false
+
 gem "rack-floc-off"
 gem "pghero"
 gem "pg_query"
@@ -28,7 +31,6 @@ group :development, :test do
 end
 
 group :development do
-  gem "listen", "~> 3.7"
   gem "license_finder", require: false
   gem "bundler-audit", require: false
   gem "rubocop", require: false

@@ -14,6 +14,7 @@ env:
   POSTGRES_DB: "evemonk_test"
   PGHOST: "localhost"
   SECRET_KEY_BASE: "919650e468e29e897a53ef239b6e0228f8b71ec6ed353b691d140945e98d0c6a63731811afc27b61b9094523740962499afabc6d7ad0c872f1d5b62472083a08"
+  CI: "yes"
 
 jobs:
   rspec:

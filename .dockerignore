@@ -5,3 +5,10 @@
 .env.example
 .deepsource.toml
 .generators
+.dockerignore
+.fasterer.yml
+.gitattributes
+.gitignore
+.hadolint.yml
+.rubocop.yml
+spec/examples.txt
