@@ -63,7 +63,9 @@ RUN bundle exec bootsnap precompile --gemfile app/ lib/
 # The SECRET_KEY_BASE here isn't used. Precomiling assets doesn't use your
 # secret key, but Rails will fail to initialize if it isn't set.
 
-RUN bundle exec rake SECRET_KEY_BASE=no assets:precompile
+RUN bundle exec rake SECRET_KEY_BASE=no \
+    DATABASE_URL="postgres://postgres@postgresql/evemonk_production?pool=1&encoding=unicode" \
+    assets:precompile
 
 FROM ruby:3.0.3-slim
 
@@ -73,7 +75,7 @@ LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 RUN set -eux; \
     apt-get update -y ; \
     apt-get dist-upgrade -y ; \
-    apt-get install libpq5 libjemalloc2 shared-mime-info --no-install-recommends -y ; \
+    apt-get install libpq5 curl libjemalloc2 shared-mime-info --no-install-recommends -y ; \
     apt-get autoremove -y ; \
     apt-get clean -y ; \
     rm -rf /var/lib/apt/lists/*
