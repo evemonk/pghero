@@ -1,4 +1,4 @@
-name: fasterer
+name: mdl
 
 on:
   push:
@@ -11,14 +11,10 @@ on:
     - cron: "0 21 * * 6"
 
 jobs:
-  fasterer:
+  mdl:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-      - name: run fasterer
-        run: bundle exec fasterer
+      - name: run mdl
+        uses: actionshub/markdownlint@main
