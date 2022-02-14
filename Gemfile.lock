@@ -229,7 +229,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    standard (1.7.1)
+    standard (1.7.2)
       rubocop (= 1.25.1)
       rubocop-performance (= 1.13.2)
     strscan (3.0.1)
