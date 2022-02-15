@@ -91,7 +91,7 @@ GEM
       activesupport (>= 5.0)
     google-protobuf (3.19.4-x86_64-darwin)
     google-protobuf (3.19.4-x86_64-linux)
-    i18n (1.9.1)
+    i18n (1.10.0)
       concurrent-ruby (~> 1.0)
     io-wait (0.2.1)
     license_finder (6.15.0)
