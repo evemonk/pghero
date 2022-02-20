@@ -149,8 +149,6 @@ GEM
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.3)
-    rack-floc-off (0.0.2)
-      rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (7.0.2.2)
@@ -269,7 +267,6 @@ DEPENDENCIES
   pg_query
   pghero
   puma (~> 5.6)
-  rack-floc-off
   rails (= 7.0.2.2)
   rspec-rails
   rubocop

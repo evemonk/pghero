@@ -13,7 +13,6 @@ gem "puma", "~> 5.6"
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "bootsnap", require: false
 
-gem "rack-floc-off"
 gem "pghero"
 gem "pg_query"
 gem "sentry-ruby"
