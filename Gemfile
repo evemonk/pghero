@@ -13,7 +13,6 @@ gem "puma", "~> 5.6"
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "bootsnap", require: false
 
-gem "rack-floc-off"
 gem "pghero"
 gem "pg_query"
 gem "sentry-ruby"
@@ -26,7 +25,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "license_finder", require: false
+  gem "license_finder", require: false, git: "https://github.com/pivotal/LicenseFinder.git", branch: "master"
   gem "bundler-audit", require: false
   gem "rubocop", require: false
   gem "rubocop-performance", require: false
