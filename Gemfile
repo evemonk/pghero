@@ -26,7 +26,7 @@ group :development, :test do
 end
 
 group :development do
-  gem "license_finder", require: false
+  gem "license_finder", require: false, git: "https://github.com/pivotal/LicenseFinder.git", branch: "master"
   gem "bundler-audit", require: false
   gem "rubocop", require: false
   gem "rubocop-performance", require: false
