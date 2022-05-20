@@ -17,7 +17,7 @@ gem "pghero"
 gem "pg_query"
 gem "sentry-ruby"
 gem "sentry-rails"
-gem "newrelic_rpm"
+# gem "newrelic_rpm"
 
 group :development, :test do
   gem "dotenv-rails"

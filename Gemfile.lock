@@ -124,7 +124,6 @@ GEM
       digest
       net-protocol
       timeout
-    newrelic_rpm (8.6.0)
     nio4r (2.5.8)
     nokogiri (1.13.6-x86_64-darwin)
       racc (~> 1.4)
@@ -255,7 +254,6 @@ DEPENDENCIES
   dotenv-rails
   fasterer
   license_finder
-  newrelic_rpm
   pg (~> 1.3)
   pg_query
   pghero
