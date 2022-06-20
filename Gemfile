@@ -6,7 +6,7 @@ ruby File.read(".ruby-version")
 
 gem "rails", "7.0.3"
 gem "sprockets-rails"
-gem "pg", "~> 1.3"
+gem "pg", "~> 1.4"
 gem "puma", "~> 5.6"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
