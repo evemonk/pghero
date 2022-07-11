@@ -92,7 +92,7 @@ GEM
     google-protobuf (3.21.2)
     google-protobuf (3.21.2-x86_64-darwin)
     google-protobuf (3.21.2-x86_64-linux)
-    i18n (1.10.0)
+    i18n (1.11.0)
       concurrent-ruby (~> 1.0)
     license_finder (7.0.1)
       bundler
