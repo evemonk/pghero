@@ -261,7 +261,7 @@ DEPENDENCIES
   rubocop-performance
   rubocop-rails
   sprockets-rails
-  standard
+  standard (= 1.16.1)
   tzinfo-data
 
 RUBY VERSION
