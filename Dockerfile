@@ -1,4 +1,4 @@
-FROM ruby:3.1.2-slim AS builder
+FROM ruby:3.1.3-slim AS builder
 
 # skipcq: DOK-DL3008
 RUN set -eux; \
@@ -23,11 +23,11 @@ ENV RAILS_ENV production
 
 ENV RAILS_LOG_TO_STDOUT true
 
-ENV RUBYGEMS_VERSION 3.3.25
+ENV RUBYGEMS_VERSION 3.3.26
 
 RUN gem update --system "$RUBYGEMS_VERSION"
 
-ENV BUNDLER_VERSION 2.3.25
+ENV BUNDLER_VERSION 2.3.26
 
 # skipcq: DOK-DL3028
 RUN gem install bundler --version "$BUNDLER_VERSION" --force
@@ -67,7 +67,7 @@ RUN bundle exec rake SECRET_KEY_BASE=no \
     DATABASE_URL="postgres://postgres@postgresql/evemonk_production?pool=1&encoding=unicode" \
     assets:precompile
 
-FROM ruby:3.1.2-slim
+FROM ruby:3.1.3-slim
 
 LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 
@@ -108,6 +108,10 @@ ENV RAILS_SERVE_STATIC_FILES true
 ENV NEW_RELIC_AGENT_ENABLED false
 
 ENV NEW_RELIC_LOG_FILE_PATH STDOUT
+
+ENV BOOTSNAP_LOG true
+
+ENV BOOTSNAP_READONLY true
 
 ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
 
