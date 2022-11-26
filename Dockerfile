@@ -109,6 +109,10 @@ ENV NEW_RELIC_AGENT_ENABLED false
 
 ENV NEW_RELIC_LOG_FILE_PATH STDOUT
 
+ENV BOOTSNAP_LOG true
+
+ENV BOOTSNAP_READONLY true
+
 ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
