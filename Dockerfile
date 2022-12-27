@@ -4,7 +4,7 @@ FROM ruby:3.2.0-slim AS builder
 RUN set -eux; \
     apt-get update -y ; \
     apt-get dist-upgrade -y ; \
-    apt-get install git gcc make libpq-dev libjemalloc2 shared-mime-info --no-install-recommends -y ; \
+    apt-get install git patch xz-utils gcc make libpq-dev libjemalloc2 shared-mime-info --no-install-recommends -y ; \
     apt-get autoremove -y ; \
     apt-get clean -y ; \
     rm -rf /var/lib/apt/lists/*
