@@ -1,4 +1,4 @@
-FROM ruby:3.1.3-slim AS builder
+FROM ruby:3.2.0-slim AS builder
 
 # skipcq: DOK-DL3008
 RUN set -eux; \
@@ -67,7 +67,7 @@ RUN bundle exec rake SECRET_KEY_BASE=no \
     DATABASE_URL="postgres://postgres@postgresql/evemonk_production?pool=1&encoding=unicode" \
     assets:precompile
 
-FROM ruby:3.1.3-slim
+FROM ruby:3.2.0-slim
 
 LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 
