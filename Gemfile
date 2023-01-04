@@ -31,3 +31,6 @@ group :development do
   gem "brakeman", require: false
   gem "fasterer", require: false
 end
+
+# lock until next working version: https://github.com/mikel/mail/issues/1541
+gem "mail", "2.7.1"
