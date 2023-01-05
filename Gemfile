@@ -15,6 +15,7 @@ gem "bootsnap", require: false
 
 gem "pghero"
 gem "pg_query"
+gem "pry-rails"
 
 group :development, :test do
   gem "dotenv-rails"
