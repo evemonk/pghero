@@ -261,7 +261,6 @@ DEPENDENCIES
   dotenv-rails
   fasterer
   license_finder
-  mail (= 2.8.0.1)
   pg (~> 1.4)
   pg_query
   pghero
