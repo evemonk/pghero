@@ -261,7 +261,6 @@ DEPENDENCIES
   dotenv-rails
   fasterer
   license_finder
-  mail (= 2.8.0.1)
   pg (~> 1.4)
   pg_query
   pghero
@@ -280,4 +279,4 @@ RUBY VERSION
    ruby 3.2.0p0
 
 BUNDLED WITH
-   2.4.2
+   2.4.3
