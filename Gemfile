@@ -34,4 +34,4 @@ group :development do
 end
 
 # lock until next working version: https://github.com/mikel/mail/issues/1541
-gem "mail", "2.7.1"
+gem "mail", "2.8.0.1"
