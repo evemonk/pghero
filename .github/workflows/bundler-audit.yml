@@ -1,4 +1,4 @@
-name: bundle-audit
+name: Bundler audit
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
     - cron: "0 21 * * 6"
 
 jobs:
-  bundle-audit:
+  bundler-audit:
     runs-on: ubuntu-latest
 
     steps:
