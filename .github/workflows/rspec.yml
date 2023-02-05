@@ -44,9 +44,7 @@ jobs:
         run: bundle exec bootsnap precompile --gemfile app/ lib/
       - name: rails zeitwerk:check
         run: bundle exec rails zeitwerk:check
-      - name: rails db:create
-        run: bundle exec rails db:create
-      - name: rails db:migrate
-        run: bundle exec rails db:migrate
+      - run: bin/rails db:create
+      - run: bin/rails db:migrate
       - name: Run tests
         run: bundle exec rspec --force-color --profile --format documentation
