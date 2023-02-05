@@ -40,11 +40,8 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      - name: bootsnap precompile
-        run: bundle exec bootsnap precompile --gemfile app/ lib/
-      - name: rails zeitwerk:check
-        run: bundle exec rails zeitwerk:check
+      - run: bundle exec bootsnap precompile --gemfile app/ lib/
+      - run: bin/rails zeitwerk:check
       - run: bin/rails db:create
       - run: bin/rails db:migrate
-      - name: Run tests
-        run: bundle exec rspec --force-color --profile --format documentation
+      - run: bin/rspec --force-color --profile --format documentation
