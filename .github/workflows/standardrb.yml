@@ -1,4 +1,4 @@
-name: standardrb
+name: Standard
 
 on:
   push:
@@ -11,7 +11,7 @@ on:
     - cron: "0 21 * * 6"
 
 jobs:
-  standardrb:
+  standard:
     runs-on: ubuntu-latest
 
     steps:
