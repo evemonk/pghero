@@ -20,5 +20,4 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      - name: rails assets:precompile
-        run: bundle exec rails SECRET_KEY_BASE=no assets:precompile
+      - run: bin/rails SECRET_KEY_BASE=no assets:precompile
