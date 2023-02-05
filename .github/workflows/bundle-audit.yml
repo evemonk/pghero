@@ -20,7 +20,5 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      - name: bundle-audit update
-        run: bundle exec bundle-audit update
-      - name: bundle-audit
-        run: bundle exec bundle-audit
+      - run: bin/bundler-audit update
+      - run: bin/bundler-audit
