@@ -24,7 +24,6 @@ end
 
 group :development do
   gem "license_finder", require: false
-  gem "bundler-audit", require: false
   gem "rubocop", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
