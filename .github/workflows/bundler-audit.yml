@@ -16,9 +16,5 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          bundler-cache: true
-      - run: bin/bundler-audit update
-      - run: bin/bundler-audit
+      - name: "Bundler Audit"
+        uses: andrewmcodes/bundler-audit-action@main
