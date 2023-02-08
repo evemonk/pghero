@@ -109,6 +109,8 @@ ENV BOOTSNAP_LOG true
 
 ENV BOOTSNAP_READONLY true
 
+ENV RUBY_YJIT_ENABLE 1
+
 ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
