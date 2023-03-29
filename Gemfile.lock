@@ -264,7 +264,7 @@ DEPENDENCIES
   pg_query
   pghero
   pry-rails
-  puma (~> 6.2)
+  puma
   rails (= 7.0.4.3)
   rspec-rails (>= 6.0.1)
   rubocop
