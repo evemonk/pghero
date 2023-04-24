@@ -268,7 +268,7 @@ DEPENDENCIES
   dotenv-rails
   fasterer
   license_finder
-  pg (~> 1.5)
+  pg
   pg_query
   pghero
   pry-rails
