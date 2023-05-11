@@ -242,7 +242,7 @@ GEM
     standard-performance (1.0.1)
       lint_roller (~> 1.0)
       rubocop-performance (~> 1.16.0)
-    thor (1.2.1)
+    thor (1.2.2)
     timeout (0.3.2)
     tomlrb (2.0.3)
     tzinfo (2.0.6)
