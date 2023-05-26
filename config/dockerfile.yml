@@ -2,5 +2,7 @@
 
 ---
 options:
+  compose: true
   jemalloc: true
+  postgresql: true
   yjit: true
