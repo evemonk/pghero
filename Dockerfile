@@ -58,7 +58,7 @@ RUN useradd rails --create-home --shell /bin/bash && \
 USER rails:rails
 
 # Deployment options
-ENV LD_PRELOAD="/usr/lib/aarch64-linux-gnu/libjemalloc.so.2" \
+ENV LD_PRELOAD="/usr/lib/x86_64-linux-gnu/libjemalloc.so.2" \
     MALLOC_CONF="dirty_decay_ms:1000,narenas:2,background_thread:true" \
     RAILS_LOG_TO_STDOUT="1" \
     RAILS_SERVE_STATIC_FILES="true"
