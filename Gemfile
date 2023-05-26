@@ -23,6 +23,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "dockerfile-rails"
   gem "license_finder", require: false
   gem "rubocop", require: false
   gem "rubocop-performance", require: false
