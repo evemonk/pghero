@@ -3,3 +3,4 @@
 ---
 options:
   jemalloc: true
+  yjit: true
