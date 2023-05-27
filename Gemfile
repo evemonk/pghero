@@ -27,7 +27,7 @@ group :development do
   gem "rubocop", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
-  gem "standard", "1.28.3", require: false
+  gem "standard", "1.28.4", require: false
   gem "brakeman", require: false
   gem "fasterer", require: false
 end
