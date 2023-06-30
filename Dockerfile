@@ -23,11 +23,11 @@ ENV RAILS_ENV production
 
 ENV RAILS_LOG_TO_STDOUT true
 
-ENV RUBYGEMS_VERSION 3.4.13
+ENV RUBYGEMS_VERSION 3.4.15
 
 RUN gem update --system "$RUBYGEMS_VERSION"
 
-ENV BUNDLER_VERSION 2.4.13
+ENV BUNDLER_VERSION 2.4.15
 
 # skipcq: DOK-DL3028
 RUN gem install bundler --version "$BUNDLER_VERSION" --force
@@ -58,7 +58,7 @@ RUN find /usr/local/bundle/gems/ -name "*.o" -delete
 
 COPY . .
 
-RUN bundle exec bootsnap precompile --gemfile app/ lib/
+RUN bundle exec bootsnap precompile --gemfile app/ lib/ config/
 
 # The SECRET_KEY_BASE here isn't used. Precomiling assets doesn't use your
 # secret key, but Rails will fail to initialize if it isn't set.
