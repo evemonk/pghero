@@ -16,6 +16,7 @@ gem "bootsnap", require: false
 gem "pghero"
 gem "pg_query"
 gem "pry-rails"
+gem "sshkit", require: false
 
 gem "uri", ">= 0.12.2"
 
