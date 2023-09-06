@@ -86,7 +86,7 @@ GEM
     fasterer (0.10.1)
       colorize (~> 0.7)
       ruby_parser (>= 3.19.1)
-    globalid (1.2.0)
+    globalid (1.2.1)
       activesupport (>= 6.1)
     google-protobuf (3.24.2)
     google-protobuf (3.24.2-aarch64-linux)
