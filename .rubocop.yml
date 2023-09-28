@@ -1,4 +1,5 @@
 require:
+  - rubocop-disable_syntax
   - rubocop-performance
   - rubocop-rails
 
@@ -8,6 +9,16 @@ AllCops:
     - "bin/*"
     - "db/schema.rb"
     - "vendor/**/*"
+
+Style/DisableSyntax:
+  DisableSyntax:
+    - unless
+    - ternary
+    - endless_methods
+    - numbered_parameters
+    - shorthand_hash_syntax
+    - and_or_not
+    - percent_literals
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
