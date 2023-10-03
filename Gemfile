@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-ruby File.read(".ruby-version")
+ruby file: ".ruby-version"
 
 gem "rails", "7.0.8"
 gem "sprockets-rails"
@@ -34,4 +34,5 @@ group :development do
   gem "standard", "1.31.1", require: false
   gem "brakeman", require: false
   gem "fasterer", require: false
+  gem "bundler-audit", require: false
 end
