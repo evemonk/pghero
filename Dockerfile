@@ -1,116 +1,69 @@
-FROM ruby:3.2.2-slim AS builder
+# syntax = docker/dockerfile:1
 
-# skipcq: DOK-DL3008
-RUN set -eux; \
-    apt-get update -y ; \
-    apt-get dist-upgrade -y ; \
-    apt-get install git patch xz-utils gcc make libpq-dev libjemalloc2 shared-mime-info --no-install-recommends -y ; \
-    apt-get autoremove -y ; \
-    apt-get clean -y ; \
-    rm -rf /var/lib/apt/lists/*
+# Make sure RUBY_VERSION matches the Ruby version in .ruby-version and Gemfile
+ARG RUBY_VERSION=3.2.2
+FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim as base
 
-RUN mkdir -p /app
+# Rails app lives here
+WORKDIR /rails
 
-WORKDIR /app
-
-COPY .ruby-version .ruby-version
-
-COPY Gemfile Gemfile
-
-COPY Gemfile.lock Gemfile.lock
-
-ENV RAILS_ENV production
-
-ENV RAILS_LOG_TO_STDOUT true
+# Set production environment
+ENV RAILS_ENV="production" \
+    BUNDLE_DEPLOYMENT="1" \
+    BUNDLE_PATH="/usr/local/bundle" \
+    BUNDLE_WITHOUT="development"
 
 RUN gem update --system "3.4.20"
 
-# skipcq: DOK-DL3028
 RUN gem install bundler --version "2.4.20" --force
 
 RUN gem --version
 
 RUN bundle --version
 
-# throw errors if Gemfile has been modified since Gemfile.lock
-RUN bundle config set --global frozen 1
+# Throw-away build stage to reduce size of final image
+FROM base as build
 
-# two jobs
-RUN bundle config set --global jobs 2
+# Install packages needed to build gems
+RUN apt-get update -qq && \
+    apt-get install --no-install-recommends -y build-essential git libpq-dev pkg-config
 
-# install only production gems without development and test
-RUN bundle config set --global without development test
+# Install application gems
+COPY .ruby-version Gemfile Gemfile.lock ./
+RUN bundle install && \
+    rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git && \
+    bundle exec bootsnap precompile --gemfile
 
-# retry 5 times before fail
-RUN bundle config set --global retry 5
-
-RUN bundle install
-
-RUN rm -rf /usr/local/bundle/cache/*.gem
-
-RUN find /usr/local/bundle/gems/ -name "*.c" -delete
-
-RUN find /usr/local/bundle/gems/ -name "*.o" -delete
-
+# Copy application code
 COPY . .
 
-RUN bundle exec bootsnap precompile --gemfile app/ lib/ config/
+# Precompile bootsnap code for faster boot times
+RUN bundle exec bootsnap precompile app/ lib/
 
-# The SECRET_KEY_BASE here isn't used. Precomiling assets doesn't use your
-# secret key, but Rails will fail to initialize if it isn't set.
+# Precompiling assets for production without requiring secret RAILS_MASTER_KEY
+RUN SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
 
-RUN bundle exec rake SECRET_KEY_BASE=no \
-    DATABASE_URL="postgres://postgres@postgresql/evemonk_production?pool=1&encoding=unicode" \
-    assets:precompile
 
-FROM ruby:3.2.2-slim
+# Final stage for app image
+FROM base
 
-LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
+# Install packages needed for deployment
+RUN apt-get update -qq && \
+    apt-get install --no-install-recommends -y curl postgresql-client && \
+    rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
-# skipcq: DOK-DL3008
-RUN set -eux; \
-    apt-get update -y ; \
-    apt-get dist-upgrade -y ; \
-    apt-get install libpq5 curl libjemalloc2 shared-mime-info --no-install-recommends -y ; \
-    apt-get autoremove -y ; \
-    apt-get clean -y ; \
-    rm -rf /var/lib/apt/lists/*
+# Copy built artifacts: gems, application
+COPY --from=build /usr/local/bundle /usr/local/bundle
+COPY --from=build /rails /rails
 
-WORKDIR /app
+# Run and own only the runtime files as a non-root user for security
+RUN useradd rails --create-home --shell /bin/bash && \
+    chown -R rails:rails db log tmp
+USER rails:rails
 
-RUN groupadd --gid 1000 app
+# Entrypoint prepares the database.
+ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 
-RUN useradd --uid 1000 --no-log-init --create-home --gid app app
-
-USER app
-
-COPY --from=builder /usr/local/bundle/ /usr/local/bundle/
-COPY --from=builder /usr/local/bin/ /usr/local/bin/
-COPY --from=builder --chown=app:app /app /app
-
-# install only production gems without development and test
-RUN bundle config set --global without development test
-
-ARG COMMIT=""
-
-ENV COMMIT_SHA=${COMMIT}
-
-ENV RAILS_ENV production
-
-ENV RAILS_LOG_TO_STDOUT true
-
-ENV RAILS_SERVE_STATIC_FILES true
-
-ENV BOOTSNAP_LOG true
-
-ENV BOOTSNAP_READONLY true
-
-ENV RUBY_YJIT_ENABLE 1
-
-ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libjemalloc.so.2
-
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
-
-EXPOSE 3000/tcp
-
-ENTRYPOINT ["bundle", "exec", "puma", "-C", "config/puma.rb"]
+# Start the server by default, this can be overwritten at runtime
+EXPOSE 3000
+CMD ["./bin/rails", "server"]
