@@ -34,4 +34,5 @@ group :development do
   gem "standard", "1.31.1", require: false
   gem "brakeman", require: false
   gem "fasterer", require: false
+  gem "bundler-audit", require: false
 end
