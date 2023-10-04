@@ -27,14 +27,16 @@ RUN bundle --version
 FROM base as build
 
 # Install packages needed to build gems
-RUN apt-get update -qq && \
-    apt-get dist-upgrade -qq && \
+RUN set -eux; \
+    apt-get update -qq ; \
+    apt-get dist-upgrade -qq ; \
     apt-get install --no-install-recommends -y build-essential git libpq-dev pkg-config shared-mime-info
 
 # Install application gems
 COPY .ruby-version Gemfile Gemfile.lock ./
-RUN bundle install && \
-    rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git && \
+RUN set -eux; \
+    bundle install ; \
+    rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git ; \
     bundle exec bootsnap precompile --gemfile
 
 # Copy application code
@@ -52,9 +54,10 @@ RUN SECRET_KEY_BASE_DUMMY=1 \
 FROM base
 
 # Install packages needed for deployment
-RUN apt-get update -qq && \
-    apt-get dist-upgrade -qq && \
-    apt-get install --no-install-recommends -y curl postgresql-client shared-mime-info && \
+RUN set -eux; \
+    apt-get update -qq ; \
+    apt-get dist-upgrade -qq ; \
+    apt-get install --no-install-recommends -y curl postgresql-client shared-mime-info ; \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Copy built artifacts: gems, application
