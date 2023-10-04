@@ -29,7 +29,7 @@ FROM base as build
 # Install packages needed to build gems
 RUN apt-get update -qq && \
     apt-get dist-upgrade -qq && \
-    apt-get install --no-install-recommends -y build-essential git libpq-dev pkg-config
+    apt-get install --no-install-recommends -y build-essential git libpq-dev pkg-config shared-mime-info
 
 # Install application gems
 COPY .ruby-version Gemfile Gemfile.lock ./
@@ -54,7 +54,7 @@ FROM base
 # Install packages needed for deployment
 RUN apt-get update -qq && \
     apt-get dist-upgrade -qq && \
-    apt-get install --no-install-recommends -y curl postgresql-client && \
+    apt-get install --no-install-recommends -y curl postgresql-client shared-mime-info && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Copy built artifacts: gems, application
