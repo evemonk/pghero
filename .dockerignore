@@ -33,3 +33,4 @@
 .hadolint.yml
 .rubocop.yml
 spec/examples.txt
+coverage/**/*
