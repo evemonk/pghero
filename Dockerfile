@@ -13,7 +13,10 @@ WORKDIR /rails
 ENV RAILS_ENV="production" \
     BUNDLE_DEPLOYMENT="1" \
     BUNDLE_PATH="/usr/local/bundle" \
-    BUNDLE_WITHOUT="development:test"
+    BUNDLE_WITHOUT="development:test" \
+    BOOTSNAP_LOG="true" \
+    BOOTSNAP_READONLY="true" \
+    RUBY_YJIT_ENABLE="1"
 
 RUN gem update --system "3.4.20"
 
@@ -74,6 +77,9 @@ USER rails:rails
 # Entrypoint prepares the database.
 ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000/tcp
+
 CMD ["./bin/rails", "server"]
