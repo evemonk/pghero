@@ -4,13 +4,13 @@ source "https://rubygems.org"
 
 ruby file: ".ruby-version"
 
-gem "rails", "7.0.8"
+gem "rails", "7.1.0"
 gem "sprockets-rails"
 gem "pg"
 gem "puma"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "tzinfo-data", platforms: [:windows, :jruby]
 gem "bootsnap", require: false
 
 gem "pghero"
@@ -35,4 +35,8 @@ group :development do
   gem "brakeman", require: false
   gem "fasterer", require: false
   gem "bundler-audit", require: false
+end
+
+group :test do
+  gem "simplecov", require: false
 end

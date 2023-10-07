@@ -1,14 +1,36 @@
-.git/*
+# See https://docs.docker.com/engine/reference/builder/#dockerignore-file for more about ignoring files.
+
+# Ignore git directory.
+/.git/
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore all environment files (except templates).
+/.env*
+!/.env*.erb
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/.keep
+
+# Ignore assets.
+/app/assets/builds/*
+!/app/assets/builds/.keep
+/public/assets
+
 .github/*
 .idea/*
-.env
-.env.example
 .deepsource.toml
 .generators
-.dockerignore
 .fasterer.yml
-.gitattributes
-.gitignore
 .hadolint.yml
 .rubocop.yml
 spec/examples.txt
+coverage/**/*
