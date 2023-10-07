@@ -16,6 +16,16 @@
 !/log/.keep
 !/tmp/.keep
 
+# Ignore cache, but keep the directory.
+/tmp/cache/*
+!/tmp/cache/
+!/tmp/cache/.keep
+
+# Ignore sockets, but keep the directory.
+/tmp/sockets/*
+!/tmp/sockets/
+!/tmp/sockets/.keep
+
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
 !/tmp/pids/.keep
