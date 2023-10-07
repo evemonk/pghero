@@ -58,6 +58,8 @@ RUN set -eux; \
     apt-get update -qq ; \
     apt-get dist-upgrade -qq ; \
     apt-get install --no-install-recommends -y curl postgresql-client shared-mime-info ; \
+    apt-get autoremove -y ; \
+    apt-get clean -y ; \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Copy built artifacts: gems, application
