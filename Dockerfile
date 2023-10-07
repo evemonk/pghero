@@ -65,7 +65,7 @@ FROM base
 RUN set -eux; \
     apt-get update -qq ; \
     apt-get dist-upgrade -qq ; \
-    apt-get install --no-install-recommends -y curl postgresql-client shared-mime-info ; \
+    apt-get install --no-install-recommends -y curl postgresql-client libjemalloc2 shared-mime-info ; \
     apt-get autoremove -y ; \
     apt-get clean -y ; \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
@@ -78,6 +78,8 @@ COPY --from=build /rails /rails
 RUN useradd rails --create-home --shell /bin/bash && \
     chown -R rails:rails db log tmp
 USER rails:rails
+
+ENV LD_PRELOAD="libjemalloc.so.2"
 
 # Entrypoint prepares the database.
 ENTRYPOINT ["/rails/bin/docker-entrypoint"]
