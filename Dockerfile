@@ -22,13 +22,11 @@ ENV RAILS_ENV="production" \
     BOOTSNAP_READONLY="true" \
     RUBY_YJIT_ENABLE="1"
 
-RUN gem update --system "3.4.20"
-
-RUN gem install bundler --version "2.4.20" --force
-
-RUN gem --version
-
-RUN bundle --version
+RUN set -eux; \
+    gem update --system "3.4.20" \
+    gem install bundler --version "2.4.20" --force \
+    gem --version \
+    bundle --version
 
 # Throw-away build stage to reduce size of final image
 FROM base as build
