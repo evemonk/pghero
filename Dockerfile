@@ -9,6 +9,10 @@ LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 # Rails app lives here
 WORKDIR /rails
 
+ARG COMMIT=""
+
+ENV COMMIT_SHA=${COMMIT}
+
 # Set production environment
 ENV RAILS_ENV="production" \
     BUNDLE_DEPLOYMENT="1" \
