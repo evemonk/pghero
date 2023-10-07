@@ -32,6 +32,7 @@ RUN set -eux; \
 FROM base as build
 
 # Install packages needed to build gems
+# skipcq: DOK-DL3008
 RUN set -eux; \
     apt-get update -qq ; \
     apt-get dist-upgrade -qq ; \
@@ -51,6 +52,7 @@ COPY . .
 RUN bundle exec bootsnap precompile app/ lib/
 
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
+# skipcq: DOK-W1001
 RUN SECRET_KEY_BASE_DUMMY=1 \
     DATABASE_URL="postgres://postgres@postgresql/evemonk_production?pool=1&encoding=unicode" \
     ./bin/rails assets:precompile
@@ -59,6 +61,7 @@ RUN SECRET_KEY_BASE_DUMMY=1 \
 FROM base
 
 # Install packages needed for deployment
+# skipcq: DOK-DL3008
 RUN set -eux; \
     apt-get update -qq ; \
     apt-get dist-upgrade -qq ; \
