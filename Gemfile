@@ -36,3 +36,7 @@ group :development do
   gem "fasterer", require: false
   gem "bundler-audit", require: false
 end
+
+group :test do
+  gem "simplecov", require: false
+end
