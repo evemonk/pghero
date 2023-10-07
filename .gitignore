@@ -27,3 +27,4 @@
 .idea/*
 .generators
 spec/examples.txt
+coverage/**/*
