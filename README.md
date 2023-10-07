@@ -14,7 +14,6 @@ Service container for running [pghero](https://github.com/ankane/pghero).
 | `SECRET_KEY_BASE`                              | Rails secret                                                                   | not set             | not set              |
 | `RAILS_MAX_THREADS`                            | Rails max threads                                                              | `2`                 | as default           |
 | `RAILS_MIN_THREADS`                            | Rails min threads                                                              | `2`                 | as default           |
-| `WEB_CONCURRENCY`                              | Workers number. Always set! e.g. `1`                                           | not set             | not set              |
 | `DATABASE_URL`                                 | Database configuration. Example: `postgres://user:password@localhost/database` | not set             | not set              |
 | `PGHERO_USERNAME`                              | User name for auth. Always set!                                                | not set             | not set              |
 | `PGHERO_PASSWORD`                              | User password for auth. Always set!                                            | not set             | not set              |
