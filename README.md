@@ -2,7 +2,7 @@
 
 [![RSpec](https://github.com/evemonk/pghero/actions/workflows/rspec.yml/badge.svg)](https://github.com/evemonk/pghero/actions/workflows/rspec.yml)
 [![DeepSource](https://static.deepsource.io/deepsource-badge-light-mini.svg)](https://deepsource.io/gh/evemonk/pghero/?ref=repository-badge)
-[![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
+[![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/standardrb/standard)
 
 Service container for running [pghero](https://github.com/ankane/pghero).
 
