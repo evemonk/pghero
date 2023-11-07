@@ -18,6 +18,9 @@ env:
   SECRET_KEY_BASE: "919650e468e29e897a53ef239b6e0228f8b71ec6ed353b691d140945e98d0c6a63731811afc27b61b9094523740962499afabc6d7ad0c872f1d5b62472083a08"
   CI: "yes"
 
+permissions:
+  contents: read
+
 jobs:
   rspec:
     runs-on: ubuntu-latest
@@ -35,9 +38,14 @@ jobs:
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Harden Runner
+        uses: step-security/harden-runner@1b05615854632b887b69ae1be8cbefe72d3ae423 # v2.6.0
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@036ef458ddccddb148a2b9fb67e95a22fdbf728b # v1.160.0
         with:
           bundler-cache: true
       - run: bundle exec bootsnap precompile --gemfile app/ lib/ config/
