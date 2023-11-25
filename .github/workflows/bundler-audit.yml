@@ -21,4 +21,4 @@ jobs:
         with:
           bundler-cache: true
       - run: bin/bundle-audit update
-      - run: bin/bundle-audit check
+      - run: bin/bundle-audit
