@@ -289,7 +289,7 @@ GEM
     sshkit (1.21.6)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
-    standard (1.32.0)
+    standard (1.32.1)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
       rubocop (~> 1.57.2)
@@ -346,7 +346,7 @@ DEPENDENCIES
   simplecov
   sprockets-rails
   sshkit
-  standard (= 1.32.0)
+  standard (= 1.32.1)
   tzinfo-data
   uri (>= 0.12.2)
 
