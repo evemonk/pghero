@@ -23,8 +23,8 @@ ENV RAILS_ENV="production" \
     RUBY_YJIT_ENABLE="1"
 
 RUN set -eux; \
-    gem update --system "3.4.22" ; \
-    gem install bundler --version "2.4.22" --force ; \
+    gem update --system "3.5.1" ; \
+    gem install bundler --version "2.5.1" --force ; \
     gem --version ; \
     bundle --version
 
