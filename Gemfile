@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby file: ".ruby-version"
 
-gem "rails", "7.1.1"
+gem "rails", "7.1.2"
 gem "sprockets-rails"
 gem "pg"
 gem "puma"
@@ -31,7 +31,7 @@ group :development do
   gem "rubocop-disable_syntax", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
-  gem "standard", "1.32.0", require: false
+  gem "standard", "1.32.1", require: false
   gem "brakeman", require: false
   gem "fasterer", require: false
   gem "bundler-audit", require: false
