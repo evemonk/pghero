@@ -1,8 +1,4 @@
-# syntax = docker/dockerfile:1
-
-# Make sure RUBY_VERSION matches the Ruby version in .ruby-version and Gemfile
-ARG RUBY_VERSION=3.2.2
-FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim as base
+FROM registry.docker.com/library/ruby:3.2.2-slim as base
 
 LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 
@@ -23,8 +19,8 @@ ENV RAILS_ENV="production" \
     RUBY_YJIT_ENABLE="1"
 
 RUN set -eux; \
-    gem update --system "3.5.1" ; \
-    gem install bundler --version "2.5.1" --force ; \
+    gem update --system "3.5.3" ; \
+    gem install bundler --version "2.5.3" --force ; \
     gem --version ; \
     bundle --version
 
