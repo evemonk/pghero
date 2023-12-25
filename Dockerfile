@@ -1,6 +1,6 @@
-FROM registry.docker.com/library/ruby:3.2.2-slim@sha256:75f884a28c1337d744a42b006d864d3ba161c6b1980d2414910e660d2034b14e as base
+FROM registry.docker.com/library/ruby:3.3.0-rc1-slim@sha256:2b3e4f039cb496d663e23b392c85e30db6eab182804ab6dbf96f5910b1d69bdc as base
 
-LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
+LABEL maintainer="Ihor Zubkov <igor.zubkov@gmail.com>"
 
 # Rails app lives here
 WORKDIR /rails
