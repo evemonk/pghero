@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby file: ".ruby-version"
 
-gem "rails", "7.1.2"
+gem "rails", "7.1.3"
 gem "sprockets-rails"
 gem "pg"
 gem "puma"
