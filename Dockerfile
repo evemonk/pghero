@@ -5,10 +5,6 @@ LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 # Rails app lives here
 WORKDIR /rails
 
-ARG COMMIT=""
-
-ENV COMMIT_SHA=${COMMIT}
-
 # Set production environment
 ENV RAILS_ENV="production" \
     BUNDLE_DEPLOYMENT="1" \
@@ -19,8 +15,8 @@ ENV RAILS_ENV="production" \
     RUBY_YJIT_ENABLE="1"
 
 RUN set -eux; \
-    gem update --system "3.5.4" ; \
-    gem install bundler --version "2.5.4" --force ; \
+    gem update --system "3.5.6" ; \
+    gem install bundler --version "2.5.6" --force ; \
     gem --version ; \
     bundle --version
 
