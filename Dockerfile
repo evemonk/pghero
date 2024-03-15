@@ -86,4 +86,4 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000/tcp
 
-CMD ["./bin/rails", "server"]
+CMD ["thrust", "./bin/rails", "server"]
