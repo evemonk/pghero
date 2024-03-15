@@ -84,6 +84,6 @@ ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
 # Start the server by default, this can be overwritten at runtime
-EXPOSE 3000/tcp
+EXPOSE 80/tcp
 
 CMD ["./bin/thrust", "./bin/rails", "server"]
