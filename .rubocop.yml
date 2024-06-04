@@ -2,6 +2,8 @@ require:
   - rubocop-disable_syntax
   - rubocop-performance
   - rubocop-rails
+  - rubocop-rspec
+  - rubocop-rspec_rails
 
 AllCops:
   NewCops: enable
@@ -95,4 +97,13 @@ Layout/EndAlignment:
   Enabled: false
 
 Lint/EmptyBlock:
+  Enabled: false
+
+RSpec/BeEq:
+  Enabled: false
+
+RSpec/EmptyExampleGroup:
+  Enabled: false
+
+RSpec/ExampleWording:
   Enabled: false

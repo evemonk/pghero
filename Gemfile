@@ -32,6 +32,8 @@ group :development do
   gem "rubocop-disable_syntax", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
+  gem "rubocop-rspec", require: false
+  gem "rubocop-rspec_rails", require: false
   gem "standard", "1.36.0", require: false
   gem "brakeman", require: false
   gem "fasterer", require: false

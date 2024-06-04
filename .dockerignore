@@ -42,5 +42,6 @@
 .fasterer.yml
 .hadolint.yml
 .rubocop.yml
+.envrc
 spec/examples.txt
 coverage/**/*
