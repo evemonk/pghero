@@ -2,6 +2,8 @@ require:
   - rubocop-disable_syntax
   - rubocop-performance
   - rubocop-rails
+  - rubocop-rspec
+  - rubocop-rspec_rails
 
 AllCops:
   NewCops: enable
