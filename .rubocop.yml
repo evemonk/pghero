@@ -98,3 +98,12 @@ Layout/EndAlignment:
 
 Lint/EmptyBlock:
   Enabled: false
+
+RSpec/BeEq:
+  Enabled: false
+
+RSpec/EmptyExampleGroup:
+  Enabled: false
+
+RSpec/ExampleWording:
+  Enabled: false
