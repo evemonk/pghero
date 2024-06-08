@@ -276,7 +276,7 @@ GEM
       rubocop (~> 1.41)
     rubocop-disable_syntax (0.1.1)
       rubocop (>= 1.50)
-    rubocop-factory_bot (2.25.1)
+    rubocop-factory_bot (2.26.0)
       rubocop (~> 1.41)
     rubocop-performance (1.21.0)
       rubocop (>= 1.48.1, < 2.0)
