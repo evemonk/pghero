@@ -35,16 +35,10 @@ COPY .ruby-version Gemfile Gemfile.lock ./
 RUN set -eux; \
     bundle install ; \
     rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git ; \
-    bundle exec bootsnap precompile --gemfile
+    bundle exec bootsnap precompile --gemfile app/ lib/ config/ Rakefile
 
 # Copy application code
 COPY . .
-
-# Precompile bootsnap code for faster boot times
-RUN bundle exec bootsnap precompile app/ lib/
-
-# Workaround for nokogiri and trivy
-RUN rm -f /usr/local/bundle/ruby/3.3.0/gems/nokogiri-1.16.2-x86_64-linux/dependencies.yml
 
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
 # skipcq: DOK-W1001
