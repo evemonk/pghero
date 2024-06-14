@@ -15,8 +15,8 @@ ENV RAILS_ENV="production" \
     RUBY_YJIT_ENABLE="1"
 
 RUN set -eux; \
-    gem update --system "3.5.11" ; \
-    gem install bundler --version "2.5.11" --force ; \
+    gem update --system "3.5.12" ; \
+    gem install bundler --version "2.5.12" --force ; \
     gem --version ; \
     bundle --version
 
