@@ -104,19 +104,19 @@ GEM
       ruby_parser (>= 3.19.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    google-protobuf (4.27.1)
+    google-protobuf (4.27.2)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.27.1-aarch64-linux)
+    google-protobuf (4.27.2-aarch64-linux)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.27.1-arm64-darwin)
+    google-protobuf (4.27.2-arm64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.27.1-x86_64-darwin)
+    google-protobuf (4.27.2-x86_64-darwin)
       bigdecimal
       rake (>= 13)
-    google-protobuf (4.27.1-x86_64-linux)
+    google-protobuf (4.27.2-x86_64-linux)
       bigdecimal
       rake (>= 13)
     i18n (1.14.5)
@@ -414,11 +414,11 @@ CHECKSUMS
   erubi (1.13.0) sha256=fca61b47daefd865d0fb50d168634f27ad40181867445badf6427c459c33cd62
   fasterer (0.11.0) sha256=9c38b77583584f3339a729eb077fd8f2856a317abe747528f6563d7c23e9dda8
   globalid (1.2.1) sha256=70bf76711871f843dbba72beb8613229a49429d1866828476f9c9d6ccc327ce9
-  google-protobuf (4.27.1) sha256=a988ba32cbb4a85c2340e4840dd3e88874225b54f23f7432dedea6ae25695578
-  google-protobuf (4.27.1-aarch64-linux) sha256=44b499a33a45943813e9e8f8de58b26a68a72ce1c244e9b9029c8b4878373f6a
-  google-protobuf (4.27.1-arm64-darwin) sha256=cf4dc1cfc8b5c170a834f259a011c070f45e8250406a22a81f9bb709b8dc0c0d
-  google-protobuf (4.27.1-x86_64-darwin) sha256=efe981cffd811b3b815db7f20fae5e926acb9b3b7624f8dce4be753f0ceeb6ec
-  google-protobuf (4.27.1-x86_64-linux) sha256=9df0c88277f5d142b99c079d9a03ecd0b9c4261d6844bc0b66006d128ce30b57
+  google-protobuf (4.27.2) sha256=9f69eb20acde6e3cf3cd197c09f38911cd7eed5fdf1bf4d4bce4c55e9dc9966f
+  google-protobuf (4.27.2-aarch64-linux) sha256=7c9d9ef84e50941ed63515c51233069f70a3f07c8c7e6ef2acd0c4443cb62d5b
+  google-protobuf (4.27.2-arm64-darwin) sha256=36cbd6620ef822f8a93870cc837212b302cbbdd7c900f8fa6701c735b7ff7f97
+  google-protobuf (4.27.2-x86_64-darwin) sha256=689f921050489d3cc2537c48bee98047414ad099bb980538562955a3bc9fdced
+  google-protobuf (4.27.2-x86_64-linux) sha256=126183186de79f709a0792f31eddf1fcebbfb5ded29538d184ece8fae73148c2
   i18n (1.14.5) sha256=26dcbc05e364b57e27ab430148b3377bc413987d34cc042336271d8f42e9d1b9
   io-console (0.7.2) sha256=f0dccff252f877a4f60d04a4dc6b442b185ebffb4b320ab69212a92b48a7a221
   irb (1.13.2) sha256=e72928d8047a515cd868967ecafbe5388097402449fb8ef658c33db6ccde8117
