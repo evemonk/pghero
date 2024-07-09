@@ -292,7 +292,7 @@ GEM
       racc (~> 1.5)
       sexp_processor (~> 4.16)
     rubyzip (2.3.2)
-    sexp_processor (4.17.1)
+    sexp_processor (4.17.2)
     simplecov (0.22.0)
       docile (~> 1.1)
       simplecov-html (~> 0.11)
@@ -487,7 +487,7 @@ CHECKSUMS
   ruby-progressbar (1.13.0) sha256=80fc9c47a9b640d6834e0dc7b3c94c9df37f08cb072b7761e4a71e22cff29b33
   ruby_parser (3.21.0) sha256=3842893d2f4602dcd93c0a79d77f9ce8e1ce197d41ac533d8e25c684f8f1c56b
   rubyzip (2.3.2) sha256=3f57e3935dc2255c414484fbf8d673b4909d8a6a57007ed754dde39342d2373f
-  sexp_processor (4.17.1) sha256=91110946720307f30bf1d549e90d9a529fef40d1fc471c069c8cca7667015da0
+  sexp_processor (4.17.2) sha256=0dfdd3d90aed28360cb3032ac8905bca66d8c5f5cab01e94762206eca24e75be
   simplecov (0.22.0) sha256=fe2622c7834ff23b98066bb0a854284b2729a569ac659f82621fc22ef36213a5
   simplecov-html (0.12.3) sha256=4b1aad33259ffba8b29c6876c12db70e5750cb9df829486e4c6e5da4fa0aa07b
   simplecov_json_formatter (0.1.4) sha256=529418fbe8de1713ac2b2d612aa3daa56d316975d307244399fa4838c601b428
