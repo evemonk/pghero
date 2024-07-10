@@ -15,8 +15,8 @@ ENV RAILS_ENV="production" \
     RUBY_YJIT_ENABLE="1"
 
 RUN set -eux; \
-    gem update --system "3.5.13" ; \
-    gem install bundler --version "2.5.13" --force ; \
+    gem update --system "3.5.15" ; \
+    gem install bundler --version "2.5.15" --force ; \
     gem --version ; \
     bundle --version
 
@@ -39,6 +39,9 @@ RUN set -eux; \
 
 # Copy application code
 COPY . .
+
+# Precompile bootsnap code for faster boot times
+RUN bundle exec bootsnap precompile app/ lib/ config/ Rakefile
 
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
 # skipcq: DOK-W1001
