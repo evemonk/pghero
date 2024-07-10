@@ -21,7 +21,7 @@ RUN set -eux; \
     bundle --version
 
 # Throw-away build stage to reduce size of final image
-FROM base as build
+FROM base AS build
 
 # Install packages needed to build gems
 # skipcq: DOK-DL3008
