@@ -28,6 +28,16 @@ group :development, :test do
 end
 
 group :development do
+  gem "license_finder", require: false
+  gem "rubocop", require: false
+  gem "rubocop-disable_syntax", require: false
+  gem "rubocop-performance", require: false
+  gem "rubocop-rails", require: false
+  gem "rubocop-rspec", require: false
+  gem "rubocop-rspec_rails", require: false
+  gem "standard", "1.39.1", require: false
+  gem "fasterer", require: false
+  gem "bundler-audit", require: false
 end
 
 group :test do
