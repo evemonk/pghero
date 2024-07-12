@@ -51,7 +51,7 @@ jobs:
           rubygems: latest
           bundler: latest
           bundler-cache: true
-      - run: bundle exec bootsnap precompile --gemfile app/ lib/ config/
+      - run: bundle exec bootsnap precompile --gemfile app/ lib/ config/ Rakefile
       - run: bin/rails zeitwerk:check
       - run: bin/rails db:create
       - run: bin/rails db:migrate
