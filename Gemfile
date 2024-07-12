@@ -24,6 +24,7 @@ gem "sshkit", require: false
 group :development, :test do
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
+  gem "rspec-rails", ">= 6.0.1"
 end
 
 group :development do
