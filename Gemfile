@@ -16,6 +16,11 @@ gem "tzinfo-data", platforms: [:windows, :jruby]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+gem "pghero"
+gem "pg_query"
+gem "pry-rails"
+gem "sshkit", require: false
+
 group :development, :test do
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
