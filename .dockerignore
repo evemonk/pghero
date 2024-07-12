@@ -2,6 +2,7 @@
 
 # Ignore git directory.
 /.git/
+/.gitignore
 
 # Ignore bundler config.
 /.bundle
@@ -16,32 +17,36 @@
 !/log/.keep
 !/tmp/.keep
 
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/.keep
+
 # Ignore cache, but keep the directory.
 /tmp/cache/*
 !/tmp/cache/
 !/tmp/cache/.keep
-
-# Ignore sockets, but keep the directory.
-/tmp/sockets/*
-!/tmp/sockets/
-!/tmp/sockets/.keep
-
-# Ignore pidfiles, but keep the directory.
-/tmp/pids/*
-!/tmp/pids/.keep
 
 # Ignore assets.
 /app/assets/builds/*
 !/app/assets/builds/.keep
 /public/assets
 
-.github/*
-.idea/*
-.deepsource.toml
-.generators
-.fasterer.yml
-.hadolint.yml
-.rubocop.yml
-.envrc
-spec/examples.txt
-coverage/**/*
+# Ignore CI service files.
+/.github
+
+# Ignore development files
+/.devcontainer
+
+# Ignore Docker-related files
+/.dockerignore
+/Dockerfile*
+
+/.idea
+/.deepsource.toml
+/.generators
+/.fasterer.yml
+/.hadolint.yml
+/.rubocop.yml
+/.envrc
+/spec/examples.txt
+/coverage
