@@ -10,6 +10,7 @@ LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 WORKDIR /rails
 
 # Install base packages
+# skipcq: DOK-DL3008
 RUN set -eux; \
     apt-get update -qq ; \
     apt-get dist-upgrade -qq ; \
@@ -33,6 +34,7 @@ RUN set -eux; \
 FROM base AS build
 
 # Install packages needed to build gems
+# skipcq: DOK-DL3008
 RUN set -eux; \
     apt-get update -qq ; \
     apt-get install --no-install-recommends -y build-essential git libpq-dev pkg-config shared-mime-info ; \
@@ -52,6 +54,7 @@ COPY . .
 RUN bundle exec bootsnap precompile app/ lib/ config/ Rakefile
 
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
+# skipcq: DOK-W1001
 RUN SECRET_KEY_BASE_DUMMY=1 \
     DATABASE_URL="postgres://postgres@postgresql/evemonk_production?pool=1&encoding=unicode" \
     ./bin/rails assets:precompile
