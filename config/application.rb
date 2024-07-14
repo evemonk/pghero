@@ -41,8 +41,7 @@ module Pghero
     # Don't generate system test files.
     config.generators.system_tests = nil
 
-    # TODO: check
     # Compiles the ERB template with the frozen_string_literal true magic comment
-    # config.action_view.frozen_string_literal = true
+    config.action_view.frozen_string_literal = true
   end
 end
