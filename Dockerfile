@@ -14,7 +14,7 @@ WORKDIR /rails
 RUN set -eux; \
     apt-get update -qq ; \
     apt-get dist-upgrade -qq ; \
-    apt-get install --no-install-recommends -y curl libjemalloc2 postgresql-client ; \
+    apt-get install --no-install-recommends -y curl libjemalloc2 postgresql-client shared-mime-info ; \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Set production environment
@@ -37,7 +37,7 @@ FROM base AS build
 # skipcq: DOK-DL3008
 RUN set -eux; \
     apt-get update -qq ; \
-    apt-get install --no-install-recommends -y build-essential git libpq-dev pkg-config shared-mime-info ; \
+    apt-get install --no-install-recommends -y build-essential git libpq-dev pkg-config ; \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Install application gems
