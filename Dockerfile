@@ -11,6 +11,7 @@ WORKDIR /rails
 
 # Install base packages
 # skipcq: DOK-DL3008
+# hadolint ignore=DL3005
 RUN set -eux; \
     apt-get update -qq ; \
     apt-get dist-upgrade -qq ; \
