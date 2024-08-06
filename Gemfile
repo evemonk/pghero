@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby file: ".ruby-version"
 
-gem "rails", "7.2.0.beta3"
+gem "rails", "7.2.0.rc1"
 gem "propshaft"
 gem "pg"
 gem "puma"
