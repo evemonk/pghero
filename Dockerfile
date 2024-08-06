@@ -27,8 +27,8 @@ ENV RAILS_ENV="production" \
     RUBY_YJIT_ENABLE="1"
 
 RUN set -eux; \
-    gem update --system "3.5.15" ; \
-    gem install bundler --version "2.5.15" --force
+    gem update --system "3.5.17" ; \
+    gem install bundler --version "2.5.17" --force
 
 # Throw-away build stage to reduce size of final image
 FROM base AS build
