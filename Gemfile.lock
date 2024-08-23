@@ -248,7 +248,7 @@ GEM
     regexp_parser (2.9.2)
     reline (0.5.9)
       io-console (~> 0.5)
-    rexml (3.3.5)
+    rexml (3.3.6)
       strscan
     rspec-core (3.13.0)
       rspec-support (~> 3.13.0)
@@ -480,7 +480,7 @@ CHECKSUMS
   rdoc (6.7.0) sha256=b17d5f0f57b0853d7b880d4360a32c7caf8dbb81f8503a36426df809e617f379
   regexp_parser (2.9.2) sha256=5a27e767ad634f8a4b544520d5cd28a0db7aa1198a5d7c9d7e11d7b3d9066446
   reline (0.5.9) sha256=5d2dd7ed0fd078e79a05e4eaa47dc91b8dacec7358e9e1dd6d9c4636cff7d378
-  rexml (3.3.5) sha256=f02f8060c2e12f417ff60e8f3f85caf273090f3db2ea09f757add91e69f98c3d
+  rexml (3.3.6) sha256=7af0459d108dfd6ffa7d38c67c8464e200f5c9d476d4c6a3d1899e92808d63c6
   rspec-core (3.13.0) sha256=557792b4e88da883d580342b263d9652b6a10a12d5bda9ef967b01a48f15454c
   rspec-expectations (3.13.2) sha256=565fb94ab39923c0fe6a16cfc9570d1821b741917a50800373fcbbb752c7a45a
   rspec-mocks (3.13.1) sha256=087189899c337937bcf1d66a50dc3fc999ac88335bbeba4d385c2a38c87d7b38
