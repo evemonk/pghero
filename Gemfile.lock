@@ -246,7 +246,7 @@ GEM
     rdoc (6.7.0)
       psych (>= 4.0.0)
     regexp_parser (2.9.2)
-    reline (0.5.9)
+    reline (0.5.10)
       io-console (~> 0.5)
     rexml (3.3.7)
     rspec-core (3.13.1)
@@ -477,7 +477,7 @@ CHECKSUMS
   rake (13.2.1) sha256=46cb38dae65d7d74b6020a4ac9d48afed8eb8149c040eccf0523bec91907059d
   rdoc (6.7.0) sha256=b17d5f0f57b0853d7b880d4360a32c7caf8dbb81f8503a36426df809e617f379
   regexp_parser (2.9.2) sha256=5a27e767ad634f8a4b544520d5cd28a0db7aa1198a5d7c9d7e11d7b3d9066446
-  reline (0.5.9) sha256=5d2dd7ed0fd078e79a05e4eaa47dc91b8dacec7358e9e1dd6d9c4636cff7d378
+  reline (0.5.10) sha256=1660c969a792ebd034e6ceee8ca628f3b6698dcdb34f7a282a5edda37b958166
   rexml (3.3.7) sha256=62a3a4d288ace18830ad6ca8aba845037d231c4f8cb481ba270ca1b75b605027
   rspec-core (3.13.1) sha256=9daa4ff29812e620193ebc8952e032f031fe167a9f6daf7ea3d29dc31d47c868
   rspec-expectations (3.13.2) sha256=565fb94ab39923c0fe6a16cfc9570d1821b741917a50800373fcbbb752c7a45a
