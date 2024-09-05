@@ -2,7 +2,7 @@
 # docker build -t my-app .
 # docker run -d -p 80:80 -p 443:443 --name my-app my-app
 
-FROM registry.docker.com/library/ruby:3.3.4-slim@sha256:0f5c785e2189ab9ffda522b20c0380dbc51d9991361f9e0bfbcf46bb68d32b29 AS base
+FROM registry.docker.com/library/ruby:3.3.5-slim@sha256:80cef14bd340ac31a3bedc450593c7f3ec2bde10f70538f8591616fe0ba40bfd AS base
 
 LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 
@@ -28,8 +28,8 @@ ENV RAILS_ENV="production" \
     RUBY_YJIT_ENABLE="1"
 
 RUN set -eux; \
-    gem update --system "3.5.17" ; \
-    gem install bundler --version "2.5.17" --force
+    gem update --system "3.5.18" ; \
+    gem install bundler --version "2.5.18" --force
 
 # Throw-away build stage to reduce size of final image
 FROM base AS build
