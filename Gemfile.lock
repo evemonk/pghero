@@ -306,7 +306,7 @@ GEM
       docile (~> 1.1)
       simplecov-html (~> 0.11)
       simplecov_json_formatter (~> 0.1)
-    simplecov-html (0.12.3)
+    simplecov-html (0.13.0)
     simplecov_json_formatter (0.1.4)
     sshkit (1.23.1)
       base64
@@ -500,7 +500,7 @@ CHECKSUMS
   securerandom (0.3.1) sha256=98f0450c0ea46d2f9a4b6db4f391dbd83dc08049592eada155739f40e0341bde
   sexp_processor (4.17.2) sha256=0dfdd3d90aed28360cb3032ac8905bca66d8c5f5cab01e94762206eca24e75be
   simplecov (0.22.0) sha256=fe2622c7834ff23b98066bb0a854284b2729a569ac659f82621fc22ef36213a5
-  simplecov-html (0.12.3) sha256=4b1aad33259ffba8b29c6876c12db70e5750cb9df829486e4c6e5da4fa0aa07b
+  simplecov-html (0.13.0) sha256=0edddd5bc8a99361047b78a1bf1cd3e1d1809a0b821b7d5df248d9e95f0237f9
   simplecov_json_formatter (0.1.4) sha256=529418fbe8de1713ac2b2d612aa3daa56d316975d307244399fa4838c601b428
   sshkit (1.23.1) sha256=888308f31bf85d926200e396f5bfc981892cd5f53513c0205449a7f85fd42ff0
   standard (1.40.0) sha256=56b47ad8b9a1073f092636a101cfe80e695e9b558bf557b02b4e7731040d1f72
