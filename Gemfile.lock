@@ -118,7 +118,7 @@ GEM
     google-protobuf (4.28.1-x86_64-linux)
       bigdecimal
       rake (>= 13)
-    i18n (1.14.5)
+    i18n (1.14.6)
       concurrent-ruby (~> 1.0)
     io-console (0.7.2)
     irb (1.14.0)
@@ -425,7 +425,7 @@ CHECKSUMS
   google-protobuf (4.28.1-x86-linux) sha256=89990e26b9c05cdd8ebac20c29c96f2854733a720b305cd0723b15089a57f51d
   google-protobuf (4.28.1-x86_64-darwin) sha256=64c726886d5e2cd258fcba92a6984e2b6b5c2b9106f8e843a10065529b75a5cc
   google-protobuf (4.28.1-x86_64-linux) sha256=7feb64d977d1cf949c58d523bd44d6352720c5435e7a2e1e2ba64c93942d31aa
-  i18n (1.14.5) sha256=26dcbc05e364b57e27ab430148b3377bc413987d34cc042336271d8f42e9d1b9
+  i18n (1.14.6) sha256=dc229a74f5d181f09942dd60ab5d6e667f7392c4ee826f35096db36d1fe3614c
   io-console (0.7.2) sha256=f0dccff252f877a4f60d04a4dc6b442b185ebffb4b320ab69212a92b48a7a221
   irb (1.14.0) sha256=53d805013bbd194874b8c13a56aca6aebcd11dd79166d88724f8a434fedde615
   json (2.7.2) sha256=1898b5cbc81cd36c0fd4d0b7ad2682c39fb07c5ff682fc6265f678f550d4982c
