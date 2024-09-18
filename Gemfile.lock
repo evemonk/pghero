@@ -90,9 +90,9 @@ GEM
     date (3.3.4)
     diff-lcs (1.5.1)
     docile (1.4.1)
-    dotenv (3.1.2)
-    dotenv-rails (3.1.2)
-      dotenv (= 3.1.2)
+    dotenv (3.1.4)
+    dotenv-rails (3.1.4)
+      dotenv (= 3.1.4)
       railties (>= 6.1)
     drb (2.2.1)
     erubi (1.13.0)
@@ -413,8 +413,8 @@ CHECKSUMS
   date (3.3.4) sha256=971f2cb66b945bcbea4ddd9c7908c9400b31a71bc316833cb42fa584b59d3291
   diff-lcs (1.5.1) sha256=273223dfb40685548436d32b4733aa67351769c7dea621da7d9dd4813e63ddfe
   docile (1.4.1) sha256=96159be799bfa73cdb721b840e9802126e4e03dfc26863db73647204c727f21e
-  dotenv (3.1.2) sha256=08036c2aa1246590034a83df2adc85b72cb4944692c49da24d8e911f97924478
-  dotenv-rails (3.1.2) sha256=66d2ad1a5aca1de742dd8ec2ceed2148675c73617a3b8d7703ef86ed47ca5d6a
+  dotenv (3.1.4) sha256=6dc502e718ea0d3542673345da05c7a69039840898e251757adb3405d2b35629
+  dotenv-rails (3.1.4) sha256=a7d75f6ab3cc7f1b28e7deb0462efb155878e4e87ce3cc6e42ce35bea61c6fe4
   drb (2.2.1) sha256=e9d472bf785f558b96b25358bae115646da0dbfd45107ad858b0bc0d935cb340
   erubi (1.13.0) sha256=fca61b47daefd865d0fb50d168634f27ad40181867445badf6427c459c33cd62
   fasterer (0.11.0) sha256=9c38b77583584f3339a729eb077fd8f2856a317abe747528f6563d7c23e9dda8
