@@ -2,7 +2,7 @@
 # docker build -t my-app .
 # docker run -d -p 80:80 -p 443:443 --name my-app my-app
 
-FROM registry.docker.com/library/ruby:3.3.5-slim@sha256:106f5d38fda9e58669b3cd7d8b06dab5acb4a86eb92319e0139bb903d8858784 AS base
+FROM registry.docker.com/library/ruby:3.3.5-slim@sha256:03083f5050ece903bbac5e39627574659adb97efbd5a19e250ee77995b4ed36a AS base
 
 LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
 
