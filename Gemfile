@@ -4,17 +4,19 @@ source "https://rubygems.org"
 
 ruby file: ".ruby-version"
 
-gem "rails", "7.2.1"
+gem "rails", "8.0.0.beta1"
 gem "propshaft"
 gem "pg"
 gem "puma"
-gem "thruster"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:windows, :jruby]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
+
+# Add HTTP asset caching/compression and X-Sendfile acceleration to Puma [https://github.com/basecamp/thruster/]
+gem "thruster", require: false
 
 gem "pghero"
 gem "pg_query"
@@ -24,7 +26,6 @@ gem "sshkit", require: false
 gem "uri", ">= 0.12.2"
 
 group :development, :test do
-  # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
   gem "rspec-rails", ">= 6.0.1"
 end

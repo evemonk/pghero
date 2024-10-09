@@ -7,9 +7,8 @@
 # Ignore bundler config.
 /.bundle
 
-# Ignore all environment files (except templates).
+# Ignore all environment files.
 /.env*
-!/.env*.erb
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -21,18 +20,10 @@
 /tmp/pids/*
 !/tmp/pids/.keep
 
-# Ignore cache, but keep the directory.
-/tmp/cache/*
-!/tmp/cache/
-!/tmp/cache/.keep
-
 # Ignore assets.
 /app/assets/builds/*
 !/app/assets/builds/.keep
 /public/assets
-
-# Ignore CI service files.
-/.github
 
 # Ignore development files
 /.devcontainer
@@ -50,3 +41,4 @@
 /.envrc
 /spec/examples.txt
 /coverage
+/.github
