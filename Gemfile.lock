@@ -74,9 +74,6 @@ GEM
       uri (>= 0.13.1)
     ast (2.4.2)
     base64 (0.2.0)
-    bcrypt_pbkdf (1.1.1)
-    bcrypt_pbkdf (1.1.1-arm64-darwin)
-    bcrypt_pbkdf (1.1.1-x86_64-darwin)
     benchmark (0.3.0)
     bigdecimal (3.1.8)
     bootsnap (1.18.4)
@@ -95,9 +92,7 @@ GEM
     date (3.3.4)
     diff-lcs (1.5.1)
     docile (1.4.1)
-    dotenv (3.1.4)
     drb (2.2.1)
-    ed25519 (1.3.0)
     erubi (1.13.0)
     fasterer (0.11.0)
       ruby_parser (>= 3.19.1)
@@ -128,17 +123,6 @@ GEM
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     json (2.7.2)
-    kamal (2.2.0)
-      activesupport (>= 7.0)
-      base64 (~> 0.2)
-      bcrypt_pbkdf (~> 1.0)
-      concurrent-ruby (~> 1.2)
-      dotenv (~> 3.1)
-      ed25519 (~> 1.2)
-      net-ssh (~> 7.0)
-      sshkit (>= 1.23.0, < 2.0)
-      thor (~> 1.3)
-      zeitwerk (~> 2.5)
     language_server-protocol (3.17.0.3)
     license_finder (7.2.1)
       bundler
@@ -376,7 +360,6 @@ DEPENDENCIES
   brakeman
   bundler-audit
   fasterer
-  kamal (>= 2.0.0.rc2)
   license_finder
   pg
   pg_query
@@ -413,9 +396,6 @@ CHECKSUMS
   activesupport (8.0.0.beta1) sha256=611a235a27a9599279d58ec2c0dc8a3e16ca62e03bacfb5bb54da6af1db1bea9
   ast (2.4.2) sha256=1e280232e6a33754cde542bc5ef85520b74db2aac73ec14acef453784447cc12
   base64 (0.2.0) sha256=0f25e9b21a02a0cc0cea8ef92b2041035d39350946e8789c562b2d1a3da01507
-  bcrypt_pbkdf (1.1.1) sha256=2f9077dde837d1f0dd2eb0f9e5327c6871c68ebc8eba88870fb6b7956e1e2b13
-  bcrypt_pbkdf (1.1.1-arm64-darwin) sha256=f35a468372a182b363086d810f6f7ee62d6ea55efbf04eb2374290c30ee4c7ef
-  bcrypt_pbkdf (1.1.1-x86_64-darwin) sha256=a85548dc8f95fc2552b283e9c1839b1457533754745a84e501bf5b35e44920ad
   benchmark (0.3.0) sha256=4ca7995224b9982efccee9b44a4464a73201c5779d78cb5a4d99ec2f39acf071
   bigdecimal (3.1.8) sha256=a89467ed5a44f8ae01824af49cbc575871fa078332e8f77ea425725c1ffe27be
   bootsnap (1.18.4) sha256=ac4c42af397f7ee15521820198daeff545e4c360d2772c601fbdc2c07d92af55
@@ -430,9 +410,7 @@ CHECKSUMS
   date (3.3.4) sha256=971f2cb66b945bcbea4ddd9c7908c9400b31a71bc316833cb42fa584b59d3291
   diff-lcs (1.5.1) sha256=273223dfb40685548436d32b4733aa67351769c7dea621da7d9dd4813e63ddfe
   docile (1.4.1) sha256=96159be799bfa73cdb721b840e9802126e4e03dfc26863db73647204c727f21e
-  dotenv (3.1.4) sha256=6dc502e718ea0d3542673345da05c7a69039840898e251757adb3405d2b35629
   drb (2.2.1) sha256=e9d472bf785f558b96b25358bae115646da0dbfd45107ad858b0bc0d935cb340
-  ed25519 (1.3.0) sha256=514a5584f84d39daac568a17ec93a4e7261e140c52c562ed8c382c18456e627d
   erubi (1.13.0) sha256=fca61b47daefd865d0fb50d168634f27ad40181867445badf6427c459c33cd62
   fasterer (0.11.0) sha256=9c38b77583584f3339a729eb077fd8f2856a317abe747528f6563d7c23e9dda8
   globalid (1.2.1) sha256=70bf76711871f843dbba72beb8613229a49429d1866828476f9c9d6ccc327ce9
@@ -446,7 +424,6 @@ CHECKSUMS
   io-console (0.7.2) sha256=f0dccff252f877a4f60d04a4dc6b442b185ebffb4b320ab69212a92b48a7a221
   irb (1.14.1) sha256=5975003b58d36efaf492380baa982ceedf5aed36967a4d5b40996bc5c66e80f8
   json (2.7.2) sha256=1898b5cbc81cd36c0fd4d0b7ad2682c39fb07c5ff682fc6265f678f550d4982c
-  kamal (2.2.0) sha256=52a472bb3e44f9b9880623c8f39ec513ffd5d778fc5566471259e0d2ab7c087b
   language_server-protocol (3.17.0.3) sha256=3d5c58c02f44a20d972957a9febe386d7e7468ab3900ce6bd2b563dd910c6b3f
   license_finder (7.2.1) sha256=179ead19b64b170638b72fd16024233813673ac9d20d5ba75ae0b4444887ef14
   lint_roller (1.1.0) sha256=2c0c845b632a7d172cb849cc90c1bce937a28c5c8ccccb50dfd46a485003cc87
