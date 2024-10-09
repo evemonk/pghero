@@ -1,47 +1,36 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-ruby file: ".ruby-version"
-
-gem "rails", "7.2.1"
+# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+gem "rails", "~> 8.0.0.beta1"
+# The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem "propshaft"
-gem "pg"
-gem "puma"
-gem "thruster"
+# Use postgresql as the database for Active Record
+gem "pg", "~> 1.1"
+# Use the Puma web server [https://github.com/puma/puma]
+gem "puma", ">= 5.0"
+
+# Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
+# gem "bcrypt", "~> 3.1.7"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: [:windows, :jruby]
+gem "tzinfo-data", platforms: %i[ windows jruby ]
 
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
-gem "pghero"
-gem "pg_query"
-gem "pry-rails"
-gem "sshkit", require: false
+# Deploy this application anywhere as a Docker container [https://kamal-deploy.org]
+gem "kamal", ">= 2.0.0.rc2", require: false
 
-gem "uri", ">= 0.12.2"
+# Add HTTP asset caching/compression and X-Sendfile acceleration to Puma [https://github.com/basecamp/thruster/]
+gem "thruster", require: false
 
 group :development, :test do
-  # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
-  gem "brakeman", require: false
-  gem "rspec-rails", ">= 6.0.1"
+  # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
+  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 end
 
 group :development do
-  gem "license_finder", require: false
-  gem "rubocop", require: false
-  gem "rubocop-disable_syntax", require: false
-  gem "rubocop-performance", require: false
-  gem "rubocop-rails", require: false
-  gem "rubocop-rspec", require: false
-  gem "rubocop-rspec_rails", require: false
-  gem "standard", "1.41.0", require: false
-  gem "fasterer", require: false
-  gem "bundler-audit", require: false
+  # Use console on exceptions pages [https://github.com/rails/web-console]
+  gem "web-console"
 end
 
-group :test do
-  gem "simplecov", require: false
-end
