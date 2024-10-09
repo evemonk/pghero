@@ -7,9 +7,8 @@
 # Ignore bundler config.
 /.bundle
 
-# Ignore all environment files (except templates).
+# Ignore all environment files.
 /.env*
-!/.env*.erb
 !/.envrc
 
 # Ignore all logfiles and tempfiles.
@@ -18,15 +17,17 @@
 !/log/.keep
 !/tmp/.keep
 
-# Ignore cache, but keep the directory.
-/tmp/cache/*
-!/tmp/cache/
-!/tmp/cache/.keep
-
 # Ignore pidfiles, but keep the directory.
 /tmp/pids/*
 !/tmp/pids/
 !/tmp/pids/.keep
+
+# Ignore storage (uploaded files in development and any SQLite databases).
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
 
 /public/assets
 
