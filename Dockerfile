@@ -19,14 +19,12 @@ RUN set -eux; \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Set production environment
-# TODO: check RUBY_YJIT_ENABLE
 ENV RAILS_ENV="production" \
     BUNDLE_DEPLOYMENT="1" \
     BUNDLE_PATH="/usr/local/bundle" \
     BUNDLE_WITHOUT="development" \
     BOOTSNAP_LOG="true" \
     BOOTSNAP_READONLY="true"
-#    RUBY_YJIT_ENABLE="1"
 
 RUN set -eux; \
     gem update --system "3.5.21" ; \
