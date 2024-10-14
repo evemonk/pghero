@@ -203,7 +203,7 @@ GEM
     puma (6.4.3)
       nio4r (~> 2.0)
     racc (1.8.1)
-    rack (3.1.7)
+    rack (3.1.8)
     rack-session (2.0.0)
       rack (>= 3.0.0)
     rack-test (2.1.0)
@@ -463,7 +463,7 @@ CHECKSUMS
   psych (5.1.2) sha256=337322f58fc2bf24827d2b9bd5ab595f6a72971867d151bb39980060ea40a368
   puma (6.4.3) sha256=24a4645c006811d83f2480057d1f54a96e7627b6b90e1c99b260b9dc630eb43e
   racc (1.8.1) sha256=4a7f6929691dbec8b5209a0b373bc2614882b55fc5d2e447a21aaa691303d62f
-  rack (3.1.7) sha256=0e9982db4ea9013326788ca2a7f48e32a4e746765e7c3512d424ef0dd22ae58b
+  rack (3.1.8) sha256=d3fbcbca43dc2b43c9c6d7dfbac01667ae58643c42cea10013d0da970218a1b1
   rack-session (2.0.0) sha256=db04b2063e180369192a9046b4559af311990af38c6a93d4c600cee4eb6d4e81
   rack-test (2.1.0) sha256=0c61fc61904049d691922ea4bb99e28004ed3f43aa5cfd495024cc345f125dfb
   rackup (2.1.0) sha256=6ecb884a581990332e45ee17bdfdc14ccbee46c2f710ae1566019907869a6c4d
