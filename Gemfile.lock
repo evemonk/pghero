@@ -183,7 +183,7 @@ GEM
     parser (3.3.5.0)
       ast (~> 2.4.1)
       racc
-    pg (1.5.8)
+    pg (1.5.9)
     pg_query (5.1.0)
       google-protobuf (>= 3.22.3)
     pghero (3.6.1)
@@ -454,7 +454,7 @@ CHECKSUMS
   ostruct (0.6.0) sha256=3b1736c99f4d985de36bde1155be5e22aaf6e564b30ff9bd481e2ef7c2d9ba85
   parallel (1.26.3) sha256=d86babb7a2b814be9f4b81587bf0b6ce2da7d45969fab24d8ae4bf2bb4d4c7ef
   parser (3.3.5.0) sha256=f30ebb71b7830c2e7cdc4b2b0e0ec2234900e3fca3fe2fba47f78be759181ab3
-  pg (1.5.8) sha256=efd71939dd1d6d9f0b434dc61dee6ef64f1d2bfcd3c177598a8797c27e654f37
+  pg (1.5.9) sha256=761efbdf73b66516f0c26fcbe6515dc7500c3f0aa1a1b853feae245433c64fdc
   pg_query (5.1.0) sha256=b7f7f47c864f08ccbed46a8244906fb6ee77ee344fd27250717963928c93145d
   pghero (3.6.1) sha256=e6d4f6ec3979d4828dafcd1eaa4214e70279fe2502b9fe5bd632d8333aa79cd4
   propshaft (1.1.0) sha256=d389361faf66aeb17e8d204828962c1e506edd14a1a17adb3fa475435c070f6b
