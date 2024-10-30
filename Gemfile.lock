@@ -122,7 +122,7 @@ GEM
     irb (1.14.1)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    json (2.7.4)
+    json (2.7.5)
     language_server-protocol (3.17.0.3)
     license_finder (7.2.1)
       bundler
@@ -423,7 +423,7 @@ CHECKSUMS
   i18n (1.14.6) sha256=dc229a74f5d181f09942dd60ab5d6e667f7392c4ee826f35096db36d1fe3614c
   io-console (0.7.2) sha256=f0dccff252f877a4f60d04a4dc6b442b185ebffb4b320ab69212a92b48a7a221
   irb (1.14.1) sha256=5975003b58d36efaf492380baa982ceedf5aed36967a4d5b40996bc5c66e80f8
-  json (2.7.4) sha256=9ea6258b4add3abd25df965515be8b19be417f58b8c42619c7f2d3e86c158ece
+  json (2.7.5) sha256=eb3448f3884cb7c6d5a550db47fca9153dfbb2a941d1ac0ff245ffacf6df6c5e
   language_server-protocol (3.17.0.3) sha256=3d5c58c02f44a20d972957a9febe386d7e7468ab3900ce6bd2b563dd910c6b3f
   license_finder (7.2.1) sha256=179ead19b64b170638b72fd16024233813673ac9d20d5ba75ae0b4444887ef14
   lint_roller (1.1.0) sha256=2c0c845b632a7d172cb849cc90c1bce937a28c5c8ccccb50dfd46a485003cc87
