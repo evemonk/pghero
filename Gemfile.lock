@@ -1,29 +1,29 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    actioncable (8.0.0.rc1)
-      actionpack (= 8.0.0.rc1)
-      activesupport (= 8.0.0.rc1)
+    actioncable (8.0.0.rc2)
+      actionpack (= 8.0.0.rc2)
+      activesupport (= 8.0.0.rc2)
       nio4r (~> 2.0)
       websocket-driver (>= 0.6.1)
       zeitwerk (~> 2.6)
-    actionmailbox (8.0.0.rc1)
-      actionpack (= 8.0.0.rc1)
-      activejob (= 8.0.0.rc1)
-      activerecord (= 8.0.0.rc1)
-      activestorage (= 8.0.0.rc1)
-      activesupport (= 8.0.0.rc1)
+    actionmailbox (8.0.0.rc2)
+      actionpack (= 8.0.0.rc2)
+      activejob (= 8.0.0.rc2)
+      activerecord (= 8.0.0.rc2)
+      activestorage (= 8.0.0.rc2)
+      activesupport (= 8.0.0.rc2)
       mail (>= 2.8.0)
-    actionmailer (8.0.0.rc1)
-      actionpack (= 8.0.0.rc1)
-      actionview (= 8.0.0.rc1)
-      activejob (= 8.0.0.rc1)
-      activesupport (= 8.0.0.rc1)
+    actionmailer (8.0.0.rc2)
+      actionpack (= 8.0.0.rc2)
+      actionview (= 8.0.0.rc2)
+      activejob (= 8.0.0.rc2)
+      activesupport (= 8.0.0.rc2)
       mail (>= 2.8.0)
       rails-dom-testing (~> 2.2)
-    actionpack (8.0.0.rc1)
-      actionview (= 8.0.0.rc1)
-      activesupport (= 8.0.0.rc1)
+    actionpack (8.0.0.rc2)
+      actionview (= 8.0.0.rc2)
+      activesupport (= 8.0.0.rc2)
       nokogiri (>= 1.8.5)
       rack (>= 2.2.4)
       rack-session (>= 1.0.1)
@@ -31,35 +31,35 @@ GEM
       rails-dom-testing (~> 2.2)
       rails-html-sanitizer (~> 1.6)
       useragent (~> 0.16)
-    actiontext (8.0.0.rc1)
-      actionpack (= 8.0.0.rc1)
-      activerecord (= 8.0.0.rc1)
-      activestorage (= 8.0.0.rc1)
-      activesupport (= 8.0.0.rc1)
+    actiontext (8.0.0.rc2)
+      actionpack (= 8.0.0.rc2)
+      activerecord (= 8.0.0.rc2)
+      activestorage (= 8.0.0.rc2)
+      activesupport (= 8.0.0.rc2)
       globalid (>= 0.6.0)
       nokogiri (>= 1.8.5)
-    actionview (8.0.0.rc1)
-      activesupport (= 8.0.0.rc1)
+    actionview (8.0.0.rc2)
+      activesupport (= 8.0.0.rc2)
       builder (~> 3.1)
       erubi (~> 1.11)
       rails-dom-testing (~> 2.2)
       rails-html-sanitizer (~> 1.6)
-    activejob (8.0.0.rc1)
-      activesupport (= 8.0.0.rc1)
+    activejob (8.0.0.rc2)
+      activesupport (= 8.0.0.rc2)
       globalid (>= 0.3.6)
-    activemodel (8.0.0.rc1)
-      activesupport (= 8.0.0.rc1)
-    activerecord (8.0.0.rc1)
-      activemodel (= 8.0.0.rc1)
-      activesupport (= 8.0.0.rc1)
+    activemodel (8.0.0.rc2)
+      activesupport (= 8.0.0.rc2)
+    activerecord (8.0.0.rc2)
+      activemodel (= 8.0.0.rc2)
+      activesupport (= 8.0.0.rc2)
       timeout (>= 0.4.0)
-    activestorage (8.0.0.rc1)
-      actionpack (= 8.0.0.rc1)
-      activejob (= 8.0.0.rc1)
-      activerecord (= 8.0.0.rc1)
-      activesupport (= 8.0.0.rc1)
+    activestorage (8.0.0.rc2)
+      actionpack (= 8.0.0.rc2)
+      activejob (= 8.0.0.rc2)
+      activerecord (= 8.0.0.rc2)
+      activesupport (= 8.0.0.rc2)
       marcel (~> 1.0)
-    activesupport (8.0.0.rc1)
+    activesupport (8.0.0.rc2)
       base64
       benchmark (>= 0.3)
       bigdecimal
@@ -211,20 +211,20 @@ GEM
     rackup (2.1.0)
       rack (>= 3)
       webrick (~> 1.8)
-    rails (8.0.0.rc1)
-      actioncable (= 8.0.0.rc1)
-      actionmailbox (= 8.0.0.rc1)
-      actionmailer (= 8.0.0.rc1)
-      actionpack (= 8.0.0.rc1)
-      actiontext (= 8.0.0.rc1)
-      actionview (= 8.0.0.rc1)
-      activejob (= 8.0.0.rc1)
-      activemodel (= 8.0.0.rc1)
-      activerecord (= 8.0.0.rc1)
-      activestorage (= 8.0.0.rc1)
-      activesupport (= 8.0.0.rc1)
+    rails (8.0.0.rc2)
+      actioncable (= 8.0.0.rc2)
+      actionmailbox (= 8.0.0.rc2)
+      actionmailer (= 8.0.0.rc2)
+      actionpack (= 8.0.0.rc2)
+      actiontext (= 8.0.0.rc2)
+      actionview (= 8.0.0.rc2)
+      activejob (= 8.0.0.rc2)
+      activemodel (= 8.0.0.rc2)
+      activerecord (= 8.0.0.rc2)
+      activestorage (= 8.0.0.rc2)
+      activesupport (= 8.0.0.rc2)
       bundler (>= 1.15.0)
-      railties (= 8.0.0.rc1)
+      railties (= 8.0.0.rc2)
     rails-dom-testing (2.2.0)
       activesupport (>= 5.0.0)
       minitest
@@ -232,9 +232,9 @@ GEM
     rails-html-sanitizer (1.6.0)
       loofah (~> 2.21)
       nokogiri (~> 1.14)
-    railties (8.0.0.rc1)
-      actionpack (= 8.0.0.rc1)
-      activesupport (= 8.0.0.rc1)
+    railties (8.0.0.rc2)
+      actionpack (= 8.0.0.rc2)
+      activesupport (= 8.0.0.rc2)
       irb (~> 1.13)
       rackup (>= 1.0.0)
       rake (>= 12.2)
@@ -367,7 +367,7 @@ DEPENDENCIES
   propshaft
   pry-rails
   puma
-  rails (= 8.0.0.rc1)
+  rails (= 8.0.0.rc2)
   rspec-rails (>= 6.0.1)
   rubocop
   rubocop-disable_syntax
@@ -383,17 +383,17 @@ DEPENDENCIES
   uri (>= 0.12.2)
 
 CHECKSUMS
-  actioncable (8.0.0.rc1) sha256=ad6cb9cab2ba6719647dfd825926760b9788497bf40137d3693c5b81e31d4054
-  actionmailbox (8.0.0.rc1) sha256=f3bcf6e73a2381a36393c331e44caa723edd0a054ea994786fda06cf96068f38
-  actionmailer (8.0.0.rc1) sha256=5e7d30a88593685e35fd2ac943ed3f18fe893a7dfa193a8b6dcd18b77e05de14
-  actionpack (8.0.0.rc1) sha256=1e0f0414328d1ffd6c894ad00604bb4758ef6613df5e46cf2ec5587ee06f6a32
-  actiontext (8.0.0.rc1) sha256=899238e8a7ca07a081d904c4213fe5467dfe6762438dde799cc63eadbd6b33d1
-  actionview (8.0.0.rc1) sha256=218521e40278a20d82eab42db95a4b58b6d4ae851e092ace450fcbfd61606d71
-  activejob (8.0.0.rc1) sha256=257e6dd72f3fa732e840193ed4cd47338d6c0e477dab8b919c56cf9dbc570250
-  activemodel (8.0.0.rc1) sha256=2d70bf9f393d985251e2e23305ed731286230431f49d3951388692256d91c025
-  activerecord (8.0.0.rc1) sha256=859c5b74298842aa13a2e0a405be368448d6e56933bd5cc6046257c904aecc76
-  activestorage (8.0.0.rc1) sha256=63d2ab51f30ce99fbcc84f3a9ed6d30cea5acf2785dac6efa555c044271f056a
-  activesupport (8.0.0.rc1) sha256=29ab37795964b5f0bc7637cc0a46c17563a9690dc67872881e38f6d9a7115a85
+  actioncable (8.0.0.rc2) sha256=5cf936e1e526500f3005405e5e6ce526c9719e44cb1ad1a1746a87248dd04a97
+  actionmailbox (8.0.0.rc2) sha256=01373deaa42e294546a12207f9608403b09b3ebdb57270dacafe8eb75e350462
+  actionmailer (8.0.0.rc2) sha256=437990a16cc34b55bd92018139b188d60318905728a65568d79e419e2701d57b
+  actionpack (8.0.0.rc2) sha256=80ae51bda21a784830e59e9c7f7261f42fbbf9b26ece031152495f09c12645d2
+  actiontext (8.0.0.rc2) sha256=cdd6c5b891d2ad98d985df8e0000582d9422961cffba6f06f2924c0dc4a9fef4
+  actionview (8.0.0.rc2) sha256=049f6068786dff6bc8fb9cafdd2944ce2b729341a7e1be9597f2d1152cd3691c
+  activejob (8.0.0.rc2) sha256=cc87f2c8c888c534c62ac46e41fb768a7a24f11164670da5956d72bbc9133637
+  activemodel (8.0.0.rc2) sha256=76f592ae6a47c88e351be7b1b35f48c91c31b8d17cc38138c33ec3cc3ae6bf7e
+  activerecord (8.0.0.rc2) sha256=5e8aba2b1a0cf357a7635d34841574f59d25a1ca9b17c3132ea95bce70c805b6
+  activestorage (8.0.0.rc2) sha256=9ac0a5f13c0618a36ef2ae97851a72c9d920099fb032790ae369ba37201d3ccd
+  activesupport (8.0.0.rc2) sha256=456a50d581d42feecefeaa6a256b58092503f06fba8f857df0d27ed853d1c3cb
   ast (2.4.2) sha256=1e280232e6a33754cde542bc5ef85520b74db2aac73ec14acef453784447cc12
   base64 (0.2.0) sha256=0f25e9b21a02a0cc0cea8ef92b2041035d39350946e8789c562b2d1a3da01507
   benchmark (0.3.0) sha256=4ca7995224b9982efccee9b44a4464a73201c5779d78cb5a4d99ec2f39acf071
@@ -467,10 +467,10 @@ CHECKSUMS
   rack-session (2.0.0) sha256=db04b2063e180369192a9046b4559af311990af38c6a93d4c600cee4eb6d4e81
   rack-test (2.1.0) sha256=0c61fc61904049d691922ea4bb99e28004ed3f43aa5cfd495024cc345f125dfb
   rackup (2.1.0) sha256=6ecb884a581990332e45ee17bdfdc14ccbee46c2f710ae1566019907869a6c4d
-  rails (8.0.0.rc1) sha256=7ef55dad4501b8ec0c63a7556976b08ee039b1f1ddb78e93624afde9ba1dc3fd
+  rails (8.0.0.rc2) sha256=91b93d1a9f7ea0b3531344a689a37e1e01eaef69996d063bfb01f4bec3ca79ad
   rails-dom-testing (2.2.0) sha256=e515712e48df1f687a1d7c380fd7b07b8558faa26464474da64183a7426fa93b
   rails-html-sanitizer (1.6.0) sha256=86e9f19d2e6748890dcc2633c8945ca45baa08a1df9d8c215ce17b3b0afaa4de
-  railties (8.0.0.rc1) sha256=ef8e7369dff2290953160b1c4e9fb6a77165c8a1d9ad8f35382e0a0d404fda27
+  railties (8.0.0.rc2) sha256=9f53448f8a2af64fd33924a0402513dd9c10b96f3cae746a6eab3ef18c43470c
   rainbow (3.1.1) sha256=039491aa3a89f42efa1d6dec2fc4e62ede96eb6acd95e52f1ad581182b79bc6a
   rake (13.2.1) sha256=46cb38dae65d7d74b6020a4ac9d48afed8eb8149c040eccf0523bec91907059d
   rdoc (6.7.0) sha256=b17d5f0f57b0853d7b880d4360a32c7caf8dbb81f8503a36426df809e617f379
