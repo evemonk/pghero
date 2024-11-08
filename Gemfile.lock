@@ -74,7 +74,7 @@ GEM
       uri (>= 0.13.1)
     ast (2.4.2)
     base64 (0.2.0)
-    benchmark (0.3.0)
+    benchmark (0.4.0)
     bigdecimal (3.1.8)
     bootsnap (1.18.4)
       msgpack (~> 1.2)
@@ -394,7 +394,7 @@ CHECKSUMS
   activesupport (8.0.0.rc2) sha256=456a50d581d42feecefeaa6a256b58092503f06fba8f857df0d27ed853d1c3cb
   ast (2.4.2) sha256=1e280232e6a33754cde542bc5ef85520b74db2aac73ec14acef453784447cc12
   base64 (0.2.0) sha256=0f25e9b21a02a0cc0cea8ef92b2041035d39350946e8789c562b2d1a3da01507
-  benchmark (0.3.0) sha256=4ca7995224b9982efccee9b44a4464a73201c5779d78cb5a4d99ec2f39acf071
+  benchmark (0.4.0) sha256=0f12f8c495545e3710c3e4f0480f63f06b4c842cc94cec7f33a956f5180e874a
   bigdecimal (3.1.8) sha256=a89467ed5a44f8ae01824af49cbc575871fa078332e8f77ea425725c1ffe27be
   bootsnap (1.18.4) sha256=ac4c42af397f7ee15521820198daeff545e4c360d2772c601fbdc2c07d92af55
   brakeman (6.2.2) sha256=d502d653699f4d451b21225ff4d19a9ec9345d23eaab5576e246185ffd7bf618
