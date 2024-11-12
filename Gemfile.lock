@@ -264,7 +264,7 @@ GEM
       rspec-mocks (~> 3.13)
       rspec-support (~> 3.13)
     rspec-support (3.13.1)
-    rubocop (1.66.1)
+    rubocop (1.68.0)
       json (~> 2.3)
       language_server-protocol (>= 3.17.0)
       parallel (~> 1.10)
@@ -310,10 +310,10 @@ GEM
       net-sftp (>= 2.1.2)
       net-ssh (>= 2.8.0)
       ostruct
-    standard (1.41.1)
+    standard (1.42.0)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
-      rubocop (~> 1.66.0)
+      rubocop (~> 1.68.0)
       standard-custom (~> 1.0.0)
       standard-performance (~> 1.5)
     standard-custom (1.0.2)
@@ -375,7 +375,7 @@ DEPENDENCIES
   rubocop-rspec_rails
   simplecov
   sshkit
-  standard (= 1.41.1)
+  standard (= 1.42.0)
   thruster
   tzinfo-data
   uri (>= 0.12.2)
@@ -480,7 +480,7 @@ CHECKSUMS
   rspec-mocks (3.13.2) sha256=2327335def0e1665325a9b617e3af9ae20272741d80ac550336309a7c59abdef
   rspec-rails (7.1.0) sha256=94585b69c4086ca79afae5cc8d2c5e314f6ad32a88c927f9c065b99596e3ee47
   rspec-support (3.13.1) sha256=48877d4f15b772b7538f3693c22225f2eda490ba65a0515c4e7cf6f2f17de70f
-  rubocop (1.66.1) sha256=0679c263b1164fd003b8590ae83b3e9e9bf72282d411755f227f1d6268ee5ee7
+  rubocop (1.68.0) sha256=07df508504d81e97174e8d21030f25d52c1be7ee8615939db43f3b377ea6c12b
   rubocop-ast (1.35.0) sha256=0e4a677b47ce7b3416ace79e6119e4c3b77c0689f264b81072a78655f9d7f233
   rubocop-disable_syntax (0.1.1) sha256=fba0b24edbd3de049ccaac8473c18fed308b5bd991e389a3368965f6cb88edbb
   rubocop-performance (1.22.1) sha256=9ed9737af1ee90655654b483e0eac4e64702139e85d33335bf744b57a309a679
@@ -496,7 +496,7 @@ CHECKSUMS
   simplecov-html (0.13.1) sha256=5dab0b7ee612e60e9887ad57693832fdf4695b4c0c859eaea5f95c18791ef10b
   simplecov_json_formatter (0.1.4) sha256=529418fbe8de1713ac2b2d612aa3daa56d316975d307244399fa4838c601b428
   sshkit (1.23.2) sha256=76d7088fddeaf3ac37bad20e7121f7352367cae6bb0cdbc7d7354efc714d213b
-  standard (1.41.1) sha256=ac244a770e1ede2630ebb501877cb2089cb626a837bd80e7487ed8f21099e12b
+  standard (1.42.0) sha256=ed59d1f07d878bb30ae77b68273efdea8067ea5bfb398bd9a83afedfa37a1a88
   standard-custom (1.0.2) sha256=424adc84179a074f1a2a309bb9cf7cd6bfdb2b6541f20c6bf9436c0ba22a652b
   standard-performance (1.5.0) sha256=0a97ecf30af7f1148cb71b668f2fcda6ea5fc0a64f48011ac653d1eceb9faf31
   stringio (3.1.2) sha256=204f1828f85cdb39d57cac4abc6dc44b04505a223f131587f2e20ae3729ba131
