@@ -163,20 +163,20 @@ GEM
       net-protocol
     net-ssh (7.3.0)
     nio4r (2.7.4)
-    nokogiri (1.16.7)
+    nokogiri (1.16.8)
       mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.16.7-aarch64-linux)
+    nokogiri (1.16.8-aarch64-linux)
       racc (~> 1.4)
-    nokogiri (1.16.7-arm-linux)
+    nokogiri (1.16.8-arm-linux)
       racc (~> 1.4)
-    nokogiri (1.16.7-arm64-darwin)
+    nokogiri (1.16.8-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.16.7-x86-linux)
+    nokogiri (1.16.8-x86-linux)
       racc (~> 1.4)
-    nokogiri (1.16.7-x86_64-darwin)
+    nokogiri (1.16.8-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.16.7-x86_64-linux)
+    nokogiri (1.16.8-x86_64-linux)
       racc (~> 1.4)
     ostruct (0.6.1)
     parallel (1.26.3)
@@ -442,13 +442,13 @@ CHECKSUMS
   net-smtp (0.5.0) sha256=5fc0415e6ea1cc0b3dfea7270438ec22b278ca8d524986a3ae4e5ae8d087b42a
   net-ssh (7.3.0) sha256=172076c4b30ce56fb25a03961b0c4da14e1246426401b0f89cba1a3b54bf3ef0
   nio4r (2.7.4) sha256=d95dee68e0bb251b8ff90ac3423a511e3b784124e5db7ff5f4813a220ae73ca9
-  nokogiri (1.16.7) sha256=f819cbfdfb0a7b19c9c52c6f2ca63df0e58a6125f4f139707b586b9511d7fe95
-  nokogiri (1.16.7-aarch64-linux) sha256=78778d35f165b59513be31c0fe232c63a82cf97626ffba695b5f822e5da1d74b
-  nokogiri (1.16.7-arm-linux) sha256=c84cdb9e3aa44c35bbb981b20175838c4b2066c26c5cb118f31f177168a42fc3
-  nokogiri (1.16.7-arm64-darwin) sha256=276dcea1b988a5b22b5acc1ba901d24b8e908c40b71dccd5d54a2ae279480dad
-  nokogiri (1.16.7-x86-linux) sha256=dddbf1c1ef99ce9fab98302b14f8bacb703e6f16e89b99f05ecee8a1fca23664
-  nokogiri (1.16.7-x86_64-darwin) sha256=630732b80fc572690eab50c73a1f18988f3ac401ed0b67ca9956ba2b1e2c3faa
-  nokogiri (1.16.7-x86_64-linux) sha256=9e1e428641d5942af877c60b418c71163560e9feb4a5c4015f3230a8b86a40f6
+  nokogiri (1.16.8) sha256=dece4bf9a663b2d6b6e874716297ad414c95be694656972d54049bd088f752a1
+  nokogiri (1.16.8-aarch64-linux) sha256=b1d41cd9abf4180adef496cc8c9fcb5b2e38d39f5e23c8a2445362226a5df6b8
+  nokogiri (1.16.8-arm-linux) sha256=8cbd2971624fc073b9430d86475da031903494dcb83c2339e13f7f22a4de6fad
+  nokogiri (1.16.8-arm64-darwin) sha256=b7aa4e8533a720e432d09b52a2ec089b55cf3ee66c916b44a0d9b6608df7bf8c
+  nokogiri (1.16.8-x86-linux) sha256=f97760e6320166d48234029bed9e999521a888376bd2b7e04f4c054537154f16
+  nokogiri (1.16.8-x86_64-darwin) sha256=6c40d7dc444f752634bf6ee8b53a55c3cfca3f9df52be46b8abcc559ccd49e47
+  nokogiri (1.16.8-x86_64-linux) sha256=ed7b1f80713ac968dd93fe2b96fc3df6e448b73bd02dd77d5fc89ba92a1ed6d9
   ostruct (0.6.1) sha256=09a3fb7ecc1fa4039f25418cc05ae9c82bd520472c5c6a6f515f03e4988cb817
   parallel (1.26.3) sha256=d86babb7a2b814be9f4b81587bf0b6ce2da7d45969fab24d8ae4bf2bb4d4c7ef
   parser (3.3.6.0) sha256=25d4e67cc4f0f7cab9a2ae1f38e2005b6904d2ea13c34734511d0faad038bc3b
