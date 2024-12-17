@@ -242,7 +242,7 @@ GEM
       zeitwerk (~> 2.6)
     rainbow (3.1.1)
     rake (13.2.1)
-    rdoc (6.9.0)
+    rdoc (6.9.1)
       psych (>= 4.0.0)
     regexp_parser (2.9.3)
     reline (0.5.12)
@@ -474,7 +474,7 @@ CHECKSUMS
   railties (8.0.1) sha256=8f653c6b1b0721b553045bd0deda1f22074b9ddc2209526e6f7285fcf607ac51
   rainbow (3.1.1) sha256=039491aa3a89f42efa1d6dec2fc4e62ede96eb6acd95e52f1ad581182b79bc6a
   rake (13.2.1) sha256=46cb38dae65d7d74b6020a4ac9d48afed8eb8149c040eccf0523bec91907059d
-  rdoc (6.9.0) sha256=91a9d213ac66a3c2d8c7f4e8b38eafde0ae3dd2a96c9f9f6a2620644ea54b209
+  rdoc (6.9.1) sha256=3344bf498a46b701aba70ccdd5cdfa8be37e68493984c1bf8c579f06c3442c9f
   regexp_parser (2.9.3) sha256=4b620657ed8349d82e1331a076415c79b9dd714a5546162ddd790ea9988f6379
   reline (0.5.12) sha256=41ab36d3fd2aaa169e99f8b82a93b9585f51130529360e24388fcccc20a055a2
   rexml (3.4.0) sha256=efbea1efba7fa151158e0ee1e643525834da2d8eb4cf744aa68f6480bc9804b2
