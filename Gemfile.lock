@@ -119,7 +119,7 @@ GEM
     i18n (1.14.6)
       concurrent-ruby (~> 1.0)
     io-console (0.8.0)
-    irb (1.14.2)
+    irb (1.14.3)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     json (2.9.0)
@@ -423,7 +423,7 @@ CHECKSUMS
   google-protobuf (4.29.1-x86_64-linux) sha256=b4ca9a8d3542e6080ec374850ff192df66ff84d91491b2d24c9096070791d5bd
   i18n (1.14.6) sha256=dc229a74f5d181f09942dd60ab5d6e667f7392c4ee826f35096db36d1fe3614c
   io-console (0.8.0) sha256=cd6a9facbc69871d69b2cb8b926fc6ea7ef06f06e505e81a64f14a470fddefa2
-  irb (1.14.2) sha256=243040f6419115beb2404380a62e41861ddb03c0792c5873dec2a69a542723c6
+  irb (1.14.3) sha256=c457f1f2f1438ae9ce5c5be3981ae2138dec7fb894c7d73777eeeb0a6c0d0752
   json (2.9.0) sha256=7c0ebdad9d030e6d572cd6f1b4e93d1d81b32c4c7dff611c1ef7825110fc6bcf
   language_server-protocol (3.17.0.3) sha256=3d5c58c02f44a20d972957a9febe386d7e7468ab3900ce6bd2b563dd910c6b3f
   license_finder (7.2.1) sha256=179ead19b64b170638b72fd16024233813673ac9d20d5ba75ae0b4444887ef14
