@@ -24,11 +24,11 @@ permissions:
 
 jobs:
   rspec:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     services:
       postgres:
-        image: "postgres:17.0"
+        image: "postgres:17.2"
         env:
           POSTGRES_HOST_AUTH_METHOD: "trust"
           POSTGRES_USER: "runner"
