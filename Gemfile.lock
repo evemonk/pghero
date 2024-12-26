@@ -168,13 +168,19 @@ GEM
       racc (~> 1.4)
     nokogiri (1.18.0-aarch64-linux-gnu)
       racc (~> 1.4)
+    nokogiri (1.18.0-aarch64-linux-musl)
+      racc (~> 1.4)
     nokogiri (1.18.0-arm-linux-gnu)
+      racc (~> 1.4)
+    nokogiri (1.18.0-arm-linux-musl)
       racc (~> 1.4)
     nokogiri (1.18.0-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.18.0-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.18.0-x86_64-linux-gnu)
+      racc (~> 1.4)
+    nokogiri (1.18.0-x86_64-linux-musl)
       racc (~> 1.4)
     ostruct (0.6.1)
     parallel (1.26.3)
@@ -347,12 +353,18 @@ GEM
 
 PLATFORMS
   aarch64-linux
+  aarch64-linux-gnu
+  aarch64-linux-musl
   arm-linux
+  arm-linux-gnu
+  arm-linux-musl
   arm64-darwin
   ruby
   x86-linux
   x86_64-darwin
   x86_64-linux
+  x86_64-linux-gnu
+  x86_64-linux-musl
 
 DEPENDENCIES
   bootsnap
@@ -445,10 +457,13 @@ CHECKSUMS
   nio4r (2.7.4) sha256=d95dee68e0bb251b8ff90ac3423a511e3b784124e5db7ff5f4813a220ae73ca9
   nokogiri (1.18.0) sha256=119dea343386d88849f44dd8c36fb1cc36f4a4fe42cf4d60f26f4bac18b3a709
   nokogiri (1.18.0-aarch64-linux-gnu) sha256=a240b4183b7a12d82cdd46d7a77255d785e01198ffb0c52c8aee1197daf0b465
+  nokogiri (1.18.0-aarch64-linux-musl) sha256=a12b764089d9c0e60f4794b685d29a97a3e2952caa1c4c87473c771edb7e9db5
   nokogiri (1.18.0-arm-linux-gnu) sha256=80e9534e153b141242864c7274605fcb8312860a16460bae796fa4490acca4e8
+  nokogiri (1.18.0-arm-linux-musl) sha256=0764082c12c01447a0e9b522d3d2cc91f384a683453c7a55842502d37b0180a8
   nokogiri (1.18.0-arm64-darwin) sha256=e6e75760aa66adf5ea0dccfba2516c111526ba50f6475426975532d1a134173c
   nokogiri (1.18.0-x86_64-darwin) sha256=4c27a29a3509f38caeec582feef381b07d1e80f56a622b3548be07271dc903b9
   nokogiri (1.18.0-x86_64-linux-gnu) sha256=1232a310b8e186d402a5f3d0c06affafaf25b1c30b01aa797559ac7bd5851c92
+  nokogiri (1.18.0-x86_64-linux-musl) sha256=5ec8161e1a0799102227009122ef836824abfab693fd4b32cb252e2f34f300c2
   ostruct (0.6.1) sha256=09a3fb7ecc1fa4039f25418cc05ae9c82bd520472c5c6a6f515f03e4988cb817
   parallel (1.26.3) sha256=d86babb7a2b814be9f4b81587bf0b6ce2da7d45969fab24d8ae4bf2bb4d4c7ef
   parser (3.3.6.0) sha256=25d4e67cc4f0f7cab9a2ae1f38e2005b6904d2ea13c34734511d0faad038bc3b
