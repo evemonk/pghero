@@ -14,7 +14,6 @@ Service container for running [pghero](https://github.com/ankane/pghero).
 | `SECRET_KEY_BASE`                    | Rails secret                                                                   | not set             | not set              |
 | `WEB_CONCURRENCY`                    | Number of CPU                                                                  | not set             | not set              |
 | `RAILS_MAX_THREADS`                  | Rails max threads                                                              | `3`                 | as default           |
-| `RAILS_MIN_THREADS`                  | Rails min threads                                                              | `3`                 | as default           |
 | `DATABASE_URL`                       | Database configuration. Example: `postgres://user:password@localhost/database` | not set             | not set              |
 | `PGHERO_USERNAME`                    | User name for auth. Always set!                                                | not set             | not set              |
 | `PGHERO_PASSWORD`                    | User password for auth. Always set!                                            | not set             | not set              |
@@ -30,5 +29,13 @@ Service container for running [pghero](https://github.com/ankane/pghero).
 ## Example `docker-compose.yml`
 
 ```yaml
-# TODO: write
+services:
+  pghero:
+    image: "docker.io/biow0lf/evemonk-pghero:main"
+    container_name: "evemonk_pghero"
+    restart: "unless-stopped"
+    environment:
+      SECRET_KEY_BASE: "secret-key-base" # run `rails secret` for generate new
+      DATABASE_URL: "postgres://user:password@localhost/database"
+      RAILS_MAX_THREADS: "1"
 ```
