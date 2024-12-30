@@ -38,4 +38,6 @@ services:
       SECRET_KEY_BASE: "secret-key-base" # run `rails secret` for generate new
       DATABASE_URL: "postgres://user:password@localhost/database"
       RAILS_MAX_THREADS: "1"
+      PGHERO_USERNAME: "root"
+      PGHERO_PASSWORD: "password"
 ```
