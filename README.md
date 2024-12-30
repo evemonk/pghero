@@ -29,5 +29,13 @@ Service container for running [pghero](https://github.com/ankane/pghero).
 ## Example `docker-compose.yml`
 
 ```yaml
-# TODO: write
+services:
+  pghero:
+    image: "docker.io/biow0lf/evemonk-pghero:main"
+    container_name: "evemonk_pghero"
+    restart: "unless-stopped"
+    environment:
+      SECRET_KEY_BASE: "secret-key-base" # run `rails secret` for generate new
+      DATABASE_URL: "postgres://user:password@localhost/database"
+      RAILS_MAX_THREADS: "1"
 ```
