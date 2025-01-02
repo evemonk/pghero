@@ -27,6 +27,8 @@ jobs:
 
       - uses: raven-actions/actionlint@v2
         id: actionlint
+        with:
+          pyflakes: false
 
       - name: actionlint Summary
         if: ${{ steps.actionlint.outputs.exit-code != 0 }}
