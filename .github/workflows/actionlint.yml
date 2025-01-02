@@ -14,7 +14,7 @@ permissions:
   contents: read
 
 jobs:
-  bundler-audit:
+  actionlint:
     runs-on: ubuntu-24.04
 
     steps:
