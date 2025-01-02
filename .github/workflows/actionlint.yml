@@ -38,4 +38,5 @@ jobs:
           echo "actionlint found ${{ steps.actionlint.outputs.total-errors }} errors"
           echo "actionlint checked ${{ steps.actionlint.outputs.total-files }} files"
           echo "actionlint cache used: ${{ steps.actionlint.outputs.cache-hit }}"
+          # shellcheck disable=SC2242
           exit ${{ steps.actionlint.outputs.exit-code }}
