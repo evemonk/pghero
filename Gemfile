@@ -38,7 +38,7 @@ group :development do
   gem "rubocop-rails", require: false
   gem "rubocop-rspec", require: false
   gem "rubocop-rspec_rails", require: false
-  gem "standard", "1.43.0", require: false
+  gem "standard", "1.44.0", require: false
   gem "fasterer", require: false
   gem "bundler-audit", require: false
 end
