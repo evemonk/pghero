@@ -6,7 +6,7 @@
 
 FROM registry.docker.com/library/ruby:3.4.1-slim@sha256:156c4e22be088cf8e31438eb28204e61e89c201968740720c36604e571b74e8a AS base
 
-LABEL maintainer="Igor Zubkov <igor.zubkov@gmail.com>"
+LABEL maintainer="Ihor Zubkov <igor.zubkov@gmail.com>"
 
 # Rails app lives here
 WORKDIR /rails
