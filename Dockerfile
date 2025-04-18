@@ -22,7 +22,7 @@ RUN set -eux; \
 ENV RAILS_ENV="production" \
     BUNDLE_DEPLOYMENT="1" \
     BUNDLE_PATH="/usr/local/bundle" \
-    BUNDLE_WITHOUT="development" \
+    BUNDLE_WITHOUT="development:test" \
     BOOTSNAP_LOG="true" \
     BOOTSNAP_READONLY="true"
 
