@@ -27,8 +27,8 @@ ENV RAILS_ENV="production" \
     BOOTSNAP_READONLY="true"
 
 RUN set -eux; \
-    gem update --system "3.6.5" ; \
-    gem install bundler --version "2.6.5" --force
+    gem update --system "3.6.8" ; \
+    gem install bundler --version "2.6.8" --force
 
 # Throw-away build stage to reduce size of final image
 FROM base AS build
