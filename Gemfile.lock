@@ -372,7 +372,7 @@ GEM
     with_env (1.1.0)
     xml-simple (1.1.9)
       rexml
-    zeitwerk (2.7.2)
+    zeitwerk (2.7.3)
 
 PLATFORMS
   aarch64-linux
@@ -561,7 +561,7 @@ CHECKSUMS
   websocket-extensions (0.1.5) sha256=1c6ba63092cda343eb53fc657110c71c754c56484aad42578495227d717a8241
   with_env (1.1.0) sha256=50b3e4f0a6cda8f90d8a6bd87a6261f6c381429abafb161c4c69ad4a0cd0b6e4
   xml-simple (1.1.9) sha256=d21131e519c86f1a5bc2b6d2d57d46e6998e47f18ed249b25cad86433dbd695d
-  zeitwerk (2.7.2) sha256=842e067cb11eb923d747249badfb5fcdc9652d6f20a1f06453317920fdcd4673
+  zeitwerk (2.7.3) sha256=b2e86b4a9b57d26ba68a15230dcc7fe6f040f06831ce64417b0621ad96ba3e85
 
 RUBY VERSION
    ruby 3.4.4p34
