@@ -114,6 +114,9 @@ GEM
     google-protobuf (4.31.1-x86-linux-gnu)
       bigdecimal
       rake (>= 13)
+    google-protobuf (4.31.1-x86-linux-musl)
+      bigdecimal
+      rake (>= 13)
     google-protobuf (4.31.1-x86_64-darwin)
       bigdecimal
       rake (>= 13)
@@ -387,6 +390,8 @@ PLATFORMS
   arm64-darwin
   ruby
   x86-linux
+  x86-linux-gnu
+  x86-linux-musl
   x86_64-darwin
   x86_64-linux
   x86_64-linux-gnu
@@ -457,6 +462,7 @@ CHECKSUMS
   google-protobuf (4.31.1-aarch64-linux-musl) sha256=fcd5b79ac4048e89e44c4c64fb432fa6400ec3c2f0344a7effa95fbc6895d24a
   google-protobuf (4.31.1-arm64-darwin) sha256=177ca61d254e4516d42997aa9d3127fd5e04ffc60c4ad333b1515ded6d7af89d
   google-protobuf (4.31.1-x86-linux-gnu) sha256=88fbe376846cd2eb16f538f56c987ec389b932316f40a4db53c317543e0c978e
+  google-protobuf (4.31.1-x86-linux-musl) sha256=8f91a6046bf9c94cf5dfe70a3415c38931f60851cfedefc059c2bda13d758256
   google-protobuf (4.31.1-x86_64-darwin) sha256=bdf067d1456167275ca7ce269922a99d24fcb9071d86429289cd73f0cf536ae4
   google-protobuf (4.31.1-x86_64-linux-gnu) sha256=7def6dbf996dab289dd541a3ee8b201e2c3e35911c274325ad9b483ebffb6dcd
   google-protobuf (4.31.1-x86_64-linux-musl) sha256=7d99d7728d9d7a6fda36130acac2a9947b868e28fe3f4aec4131cebce0d420f9
