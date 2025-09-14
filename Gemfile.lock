@@ -349,7 +349,7 @@ GEM
       net-sftp (>= 2.1.2)
       net-ssh (>= 2.8.0)
       ostruct
-    standard (1.51.0)
+    standard (1.51.1)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.0)
       rubocop (~> 1.80.2)
@@ -426,7 +426,7 @@ DEPENDENCIES
   rubocop-rspec_rails
   simplecov
   sshkit
-  standard (= 1.51.0)
+  standard (= 1.51.1)
   thruster
   tzinfo-data
   uri (>= 0.12.2)
@@ -563,7 +563,7 @@ CHECKSUMS
   simplecov-html (0.13.2) sha256=bd0b8e54e7c2d7685927e8d6286466359b6f16b18cb0df47b508e8d73c777246
   simplecov_json_formatter (0.1.4) sha256=529418fbe8de1713ac2b2d612aa3daa56d316975d307244399fa4838c601b428
   sshkit (1.24.0) sha256=9597c1f984778ae9742f2dc839778d57a6a2efb868107046575c52ac7c628e6c
-  standard (1.51.0) sha256=b6d25b7dcf5b474a62f929050286410ae66d32e12257b65c18bdd41e5a94fa82
+  standard (1.51.1) sha256=6d0d98a1fac26d660393f37b3d9c864632bb934b17abfa23811996b20f87faf2
   standard-custom (1.0.2) sha256=424adc84179a074f1a2a309bb9cf7cd6bfdb2b6541f20c6bf9436c0ba22a652b
   standard-performance (1.8.0) sha256=ed17b7d0e061b2a19a91dd434bef629439e2f32310f22f26acb451addc92b788
   stringio (3.1.7) sha256=5b78b7cb242a315fb4fca61a8255d62ec438f58da2b90be66048546ade4507fa
