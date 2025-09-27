@@ -1,0 +1,4 @@
+[codespell]
+check-hidden = true
+check-filenames = true
+ignore-words-list =
