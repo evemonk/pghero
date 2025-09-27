@@ -1,0 +1,22 @@
+name: Spell Checking
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: "0 21 * * 6"
+
+permissions:
+  contents: read
+
+jobs:
+  codespell:
+    name: Check spelling of all files with codespell
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: codespell-project/actions-codespell@v2
