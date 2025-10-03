@@ -4,7 +4,7 @@
 
 # For a containerized dev environment, see Dev Containers: https://guides.rubyonrails.org/getting_started_with_devcontainer.html
 
-FROM registry.docker.com/library/ruby:3.4.6-slim@sha256:eb05afb08a5803b9bd730c37701a4c6219a60873cfedb9df9ded6233f6c2b8fc AS base
+FROM registry.docker.com/library/ruby:3.4.6-slim@sha256:01214554febcb5f31192cbbab9b564d81691b92b7b19c2741609746a19ced582 AS base
 
 LABEL maintainer="Ihor Zubkov <igor.zubkov@gmail.com>"
 
