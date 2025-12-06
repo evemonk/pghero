@@ -107,3 +107,6 @@ RSpec/EmptyExampleGroup:
 
 RSpec/ExampleWording:
   Enabled: false
+
+RSpecRails/InferredSpecType:
+  Enabled: false
