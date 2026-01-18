@@ -4,7 +4,7 @@
 
 # For a containerized dev environment, see Dev Containers: https://guides.rubyonrails.org/getting_started_with_devcontainer.html
 
-FROM registry.docker.com/library/ruby:4.0.0-slim@sha256:af10ee4286a55db1d975744717991c61a5c7d5b02b43bdf61386213f3cba789b AS base
+FROM registry.docker.com/library/ruby:4.0.1-slim AS base
 
 LABEL maintainer="Ihor Zubkov <igor.zubkov@gmail.com>"
 
@@ -27,8 +27,8 @@ ENV RAILS_ENV="production" \
     BOOTSNAP_READONLY="true"
 
 RUN set -eux; \
-    gem update --system "4.0.3" ; \
-    gem install bundler --version "4.0.3" --force
+    gem update --system "4.0.4" ; \
+    gem install bundler --version "4.0.4" --force
 
 # Throw-away build stage to reduce size of final image
 FROM base AS build
